@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Documentation for posters.science",
   "main": "index.js",
-  "author": "Fair Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
+  "author": "FAIR Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
   "license": "MIT",
   "scripts": {
     "dev": "pnpm docs:dev --port 3000",
