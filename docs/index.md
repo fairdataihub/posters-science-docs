@@ -6,8 +6,8 @@ titleTemplate: posters.science
 
 hero:
   name: posters.science
-  text: ''
-  tagline: Documentation for users and developers of posters.science.
+  text: ""
+  tagline: Documentation for the posters.science platform.
   actions:
     - theme: brand
       text: Get Started

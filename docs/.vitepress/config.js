@@ -1,60 +1,68 @@
-import { defineConfig } from 'vitepress';
-import { withMermaid } from 'vitepress-plugin-mermaid';
+import { defineConfig } from "vitepress";
+import texmath from "markdown-it-texmath";
+import katex from "katex";
 
-export default withMermaid(
-  defineConfig({
-    lang: 'en-US',
-    title: 'posters.science',
-    description: 'Documentation for posters.science',
-    titleTemplate: 'posters.science',
-    port: 3000,
+// https://vitepress.dev/reference/site-config
 
-    appearance: true,
-    lastUpdated: true,
-    ignoreDeadLinks: false,
-
-    markdown: {
-      lineNumbers: true,
+export default defineConfig({
+  lang: "en-US",
+  title: "Posters.science",
+  description: "Documentation for posters.science",
+  titleTemplate: "Posters.science Documentation - %s",
+  appearance: true,
+  lastUpdated: true,
+  ignoreDeadLinks: false,
+  markdown: {
+    config: (md) => {
+      md.use(texmath, {
+        engine: katex,
+        delimiters: "dollars",
+      });
     },
-
-    mermaid: {},
-
-    head: [
-      ['link', { rel: 'icon', href: 'favicon.ico' }],
-      ['link', { rel: 'manifest', href: 'site.webmanifest' }],
-      ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ],
-
-    themeConfig: {
-      editLink: {
-        pattern:
-          'https://github.com/fairdataihub/posters-science-docs/edit/main/docs/:path',
-        text: 'Edit this page on GitHub',
+  },
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css",
       },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css",
+      },
+    ],
+    ["link", { rel: "icon", href: "favicon.ico" }],
+    ["link", { rel: "manifest", href: "site.webmanifest" }],
+    ["meta", { name: "theme-color", content: "#ffffff" }],
+  ],
 
-      socialLinks: [
+  themeConfig: {
+    editLink: {
+      pattern:
+        "https://github.com/fairdataihub/posters-science-docs/edit/main/docs/:path",
+    },
+    socialLinks: [
+      {
+        icon: "github",
+        link: "https://github.com/fairdataihub/posters-science",
+      },
+    ],
+    nav: [{ text: "Documentation", link: "/docs/getting-started" }],
+    sidebar: {
+      "/docs": [
         {
-          icon: 'github',
-          link: 'https://github.com/fairdataihub/posters-science-docs',
+          text: "Getting Started",
+          collapsible: true,
+          items: [{ text: "Introduction", link: "/docs/getting-started" }],
         },
       ],
-
-      nav: [{ text: 'Documentation', link: '/docs/getting-started' }],
-
-      sidebar: {
-        '/docs': [
-          {
-            text: 'Getting Started',
-            collapsible: true,
-            items: [{ text: 'Introduction', link: '/docs/getting-started' }],
-          },
-        ],
-      },
-
-      footer: {
-        message: 'Released under the MIT License.',
-        copyright: 'Copyright © present | fairdataihub',
-      },
     },
-  }),
-);
+    footer: {
+      copyright: "© 2026 FAIR Data Innovations Hub. All rights reserved.",
+    },
+  },
+});
