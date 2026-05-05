@@ -7,7 +7,7 @@ Documentation for posters.science.
 </p>
 
 <h4>
-  <a href="https://github.com/fairdataihub/docs.posters.science/issues/">Report Issues/Make suggestions</a>
+  <a href="https://github.com/fairdataihub/posters-science-docs/issues/">Report Issues/Make suggestions</a>
 </h4>
 </div>
 
@@ -32,8 +32,8 @@ npm install -g yarn
 ### Run Locally
 
 ```bash
-git clone https://github.com/fairdataihub/docs.posters.science.git
-cd docs.posters.science
+git clone https://github.com/fairdataihub/posters-science-docs.git
+cd posters-science-docs
 yarn install
 yarn dev
 ```

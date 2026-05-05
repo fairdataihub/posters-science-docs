@@ -1,4 +1,4 @@
-title: docs.posters.science
+title: posters-science-docs
 authors:
   - given-names: Dorian
     family-names: Portillo
@@ -9,4 +9,4 @@ message: If you use this software, please cite it using the metadata from this f
 type: software
 abstract: Documentation for posters.science
 license: MIT
-repository-code: https://github.com/fairdataihub/docs.posters.science
+repository-code: https://github.com/fairdataihub/posters-science-docs

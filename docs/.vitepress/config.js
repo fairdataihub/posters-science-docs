@@ -28,14 +28,14 @@ export default withMermaid(
     themeConfig: {
       editLink: {
         pattern:
-          'https://github.com/fairdataihub/docs.posters.science/edit/main/docs/:path',
+          'https://github.com/fairdataihub/posters-science-docs/edit/main/docs/:path',
         text: 'Edit this page on GitHub',
       },
 
       socialLinks: [
         {
           icon: 'github',
-          link: 'https://github.com/fairdataihub/docs.posters.science',
+          link: 'https://github.com/fairdataihub/posters-science-docs',
         },
       ],
 
