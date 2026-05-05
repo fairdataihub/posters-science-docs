@@ -1,7 +1,7 @@
 {
-  "name": "codefair-docs",
+  "name": "docs.posters.science",
   "version": "0.0.0",
-  "description": "Developer documentation for the Codefair",
+  "description": "Documentation for posters.science",
   "main": "index.js",
   "author": "Fair Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
   "license": "MIT",
@@ -30,7 +30,6 @@
     "@semantic-release/github": "9.0.5",
     "@semantic-release/npm": "10.0.5",
     "@semantic-release/release-notes-generator": "11.0.7",
-    "flexsearch": "^0.7.31",
     "husky": "8.0.2",
     "lint-staged": "14.0.1",
     "markdown-it": "^13.0.1",
@@ -39,7 +38,6 @@
     "semantic-release": "21.1.1",
     "vite": "^4.2.1",
     "vitepress": "1.0.0-alpha.33",
-    "vitepress-plugin-search": "^1.0.4-alpha.17",
     "vue": "3.4.34"
   },
   "dependencies": {
@@ -48,6 +46,6 @@
   },
   "type": "module",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=24.0.0"
   }
 }

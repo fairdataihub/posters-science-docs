@@ -1,20 +1,12 @@
-title: codefair-docs
+title: docs.posters.science
 authors:
   - given-names: Dorian
     family-names: Portillo
     email: wheresdorian@gmail.com
     affiliation: FAIR Data Innovations Hub
-  - given-names: Bhavesh
-    family-names: Patel
-    affiliation: California Medical Innovations Institute
 cff-version: 1.2.0
 message: If you use this software, please cite it using the metadata from this file.
 type: software
-abstract: Documentation for Codefair (codefair.io)
-keywords:
-  - documentation
-  - codefair
-  - FAIR software
-  - FAIR-BioRS
+abstract: Documentation for posters.science
 license: MIT
-repository-code: https://github.com/fairdataihub/codefair-docs
+repository-code: https://github.com/fairdataihub/docs.posters.science

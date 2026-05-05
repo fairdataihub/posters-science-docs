@@ -1,37 +1,26 @@
 ---
 layout: home
 
-title: Codefair Documentation
-titleTemplate: Codefair Documentation
-
-head:
-  - - meta
-    - name: og:image
-      content: https://kalai.fairdataihub.org/api/generate?title=Codefair%20Documentation&description=&app=codefair&org=fairdataihub
+title: posters.science
+titleTemplate: posters.science
 
 hero:
-  name: Codefair Documentation
+  name: posters.science
   text: ''
-  tagline: Documentation for users and developers of Codefair.
-  image:
-    src: /landing.png
-    alt: Vitest
+  tagline: Documentation for users and developers of posters.science.
   actions:
     - theme: brand
-      text: View Documentation 📚
-      link: /docs/intro
-    - theme: secondary
-      text: Install Codefair 🚀
-      link: https://github.com/marketplace/codefair-app
+      text: Get Started
+      link: /docs/getting-started
 
 features:
   - icon: 📚
-    title: Be FAIR
-    details: Make your software Findable, Accessible, Interoperable, and Reusable (FAIR) to enhance its reusability and make it citable.
-  - icon: 📝
-    title: Comply with funding agencies
-    details: Start complying with funding agencies such as the NIH that are progressively requiring all research outputs to be FAIR.
-  - icon: 😅
-    title: Don't sweat
-    details: Codefair takes care of everything for you so you can focus on the goals of your software.
+    title: Feature One
+    details: Describe the first key feature or benefit of posters.science here.
+  - icon: 🚀
+    title: Feature Two
+    details: Describe the second key feature or benefit of posters.science here.
+  - icon: 🛠️
+    title: Feature Three
+    details: Describe the third key feature or benefit of posters.science here.
 ---
