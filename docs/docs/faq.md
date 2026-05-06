@@ -18,7 +18,7 @@ Posters.science is a free, open source platform for sharing and discovering scie
 
 ### Do I need an account to search for posters?
 
-No. Searching, browsing, and viewing poster records is available to everyone without an account. You only need to sign in with ORCID to share a poster.
+No. Searching, browsing, and viewing poster records is available to everyone without an account. You only need to create an account to share a poster.
 
 ### Is Posters.science free?
 

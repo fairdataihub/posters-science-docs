@@ -12,7 +12,9 @@ head:
 
 The Overview page provides a snapshot of the Posters.science registry through interactive charts and statistics. It gives you a sense of the registry's scope, growth, and the research it covers.
 
-<!-- ![Overview Page](/overview-page.png) -->
+::: info
+The Overview page is under active development. The visualizations described below reflect planned functionality.
+:::
 
 ## :chart_with_upwards_trend: What you can see
 

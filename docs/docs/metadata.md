@@ -12,7 +12,9 @@ head:
 
 After your poster is uploaded and processed, Posters.science presents the extracted metadata for your review. This step ensures that the information describing your poster is accurate before it gets published.
 
-<!-- ![Metadata Review](/metadata-review.png) -->
+::: info
+The metadata review page is only accessible after uploading a poster while signed in. See [Uploading Your Poster](./upload) for the first step.
+:::
 
 ## :hammer_and_wrench: How to review metadata
 

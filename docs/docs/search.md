@@ -12,7 +12,7 @@ head:
 
 The Posters.science registry contains thousands of scientific posters from Zenodo, Figshare, and direct submissions through the platform. You can search across all of them without creating an account.
 
-<!-- ![Search Page](/search-page.png) -->
+![Discover Posters Page](/discover-page.png)
 
 ## :hammer_and_wrench: How to search
 

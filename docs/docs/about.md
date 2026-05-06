@@ -20,6 +20,8 @@ Despite this, the vast majority of posters disappear after the conference ends. 
 
 Posters.science addresses this gap. By making it fast and straightforward to share a poster with proper metadata, a DOI, and a permanent home in a trusted repository, the platform aims to make poster sharing a routine part of the research process.
 
+![Discover and share posters on Posters.science](/discovery-flow.gif)
+
 ## :gear: How does it work?
 
 The sharing process has three steps:

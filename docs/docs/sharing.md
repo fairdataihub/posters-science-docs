@@ -21,7 +21,7 @@ Posters.science reduces the process of sharing a FAIR poster to three steps. The
 3. **Publish or download**. Choose to publish your poster directly to Zenodo or Figshare, where it receives a DOI and becomes permanently citable. Or download a structured poster package for your own records.
 
 ::: info
-You must be signed in with your ORCID account to share a poster. See [Creating an Account](./account) for details.
+You must be signed in to share a poster. See [Creating an Account](./account) for details.
 :::
 
 ## :watch: How long does it take?

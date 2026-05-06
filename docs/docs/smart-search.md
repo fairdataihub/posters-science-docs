@@ -12,7 +12,9 @@ head:
 
 Smart Search lets you ask questions about the poster registry in plain language. Instead of picking keywords and filters, you describe what you are looking for and the platform finds relevant posters and summarizes what it finds.
 
-<!-- ![Smart Search](/smart-search.png) -->
+::: info
+Smart Search is accessible from the [Discover](https://posters.science/discover) page by toggling the Smart Search button.
+:::
 
 ## :hammer_and_wrench: How to use Smart Search
 

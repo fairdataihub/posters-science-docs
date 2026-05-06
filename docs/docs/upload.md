@@ -15,11 +15,11 @@ The first step in sharing your poster is uploading the file. Posters.science acc
 ## :hammer_and_wrench: How to upload
 
 1. Sign in to [posters.science](https://posters.science) with your ORCID account.
-2. Click the `Share` button in the navigation bar.
+2. Click `Share a Poster` in the navigation bar.
 3. Drag and drop your poster file into the upload area, or click to open the file picker.
 4. Wait for the upload and processing to complete. This typically takes 10 to 30 seconds depending on file size.
 
-<!-- ![Upload Page](/upload-page.png) -->
+![Share a Poster Page](/share-page.png)
 
 ## :page_facing_up: Supported file formats
 

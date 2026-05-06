@@ -1,38 +1,55 @@
 #!/usr/bin/env python3
-"""Capture screenshots of posters.science for documentation."""
+"""Capture screenshots of posters.science for documentation.
 
-from playwright.sync_api import sync_playwright
+Uses system Chrome in headless mode. Requires google-chrome or chromium
+to be installed and accessible on PATH.
+"""
+
 import os
+import subprocess
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "public")
 
 PAGES = [
     ("https://posters.science", "landing-page.png"),
     ("https://posters.science/discover", "discover-page.png"),
-    ("https://posters.science/overview", "overview-page.png"),
-    ("https://posters.science/share", "share-page.png"),
+    ("https://posters.science/share/new", "share-page.png"),
+    ("https://posters.science/login", "login-page.png"),
+    ("https://posters.science/signup", "signup-page.png"),
 ]
+
+CHROME = "google-chrome"
+VIEWPORT = "1440,900"
+
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(viewport={"width": 1440, "height": 900})
-
-        for url, filename in PAGES:
-            page = context.new_page()
-            page.goto(url, wait_until="networkidle", timeout=30000)
-            page.wait_for_timeout(2000)
-            filepath = os.path.join(OUTPUT_DIR, filename)
-            page.screenshot(path=filepath, full_page=False)
-            print(f"Captured: {filename}")
-            page.close()
-
-        context.close()
-        browser.close()
+    for url, filename in PAGES:
+        filepath = os.path.join(OUTPUT_DIR, filename)
+        result = subprocess.run(
+            [
+                CHROME,
+                "--headless",
+                "--disable-gpu",
+                f"--screenshot={filepath}",
+                f"--window-size={VIEWPORT}",
+                url,
+            ],
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        if os.path.exists(filepath):
+            size = os.path.getsize(filepath)
+            print(f"Captured: {filename} ({size:,} bytes)")
+        else:
+            print(f"Failed: {filename}")
+            if result.stderr:
+                print(f"  {result.stderr[:200]}")
 
     print(f"\nScreenshots saved to {OUTPUT_DIR}")
+
 
 if __name__ == "__main__":
     main()

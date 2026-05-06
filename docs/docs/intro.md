@@ -11,3 +11,5 @@ head:
 # :page_with_curl: Introduction
 
 This is the documentation for [Posters.science](https://posters.science), a free and open source platform for sharing, discovering, and citing scientific posters. Whether you presented a poster at a medical conference, an engineering symposium, or a biology workshop, Posters.science helps you make that work findable, citable, and reusable. You can learn more about the project at [posters.science](https://posters.science).
+
+![Posters.science Landing Page](/landing-page.png)
