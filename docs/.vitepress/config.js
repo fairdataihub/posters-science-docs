@@ -2,13 +2,11 @@ import { defineConfig } from "vitepress";
 import texmath from "markdown-it-texmath";
 import katex from "katex";
 
-// https://vitepress.dev/reference/site-config
-
 export default defineConfig({
   lang: "en-US",
   title: "Posters.science",
-  description: "Documentation for posters.science",
-  titleTemplate: "Posters.science Documentation - %s",
+  description: "Documentation for the Posters.science platform",
+  titleTemplate: "Posters.science - %s",
   appearance: true,
   lastUpdated: true,
   ignoreDeadLinks: false,
@@ -44,25 +42,99 @@ export default defineConfig({
     editLink: {
       pattern:
         "https://github.com/fairdataihub/posters-science-docs/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
     },
+
     socialLinks: [
       {
         icon: "github",
         link: "https://github.com/fairdataihub/posters-science",
       },
     ],
-    nav: [{ text: "Documentation", link: "/docs/getting-started" }],
+
+    nav: [
+      {
+        text: "User Guide",
+        link: "/docs/intro",
+      },
+      {
+        text: "Developer Guide",
+        link: "https://fairdataihub.github.io/posters-science-dev-docs/",
+      },
+      {
+        text: "Contact Us",
+        link: "https://tally.so/r/3E0dao",
+      },
+    ],
+
     sidebar: {
-      "/docs": [
-        {
-          text: "Getting Started",
-          collapsible: true,
-          items: [{ text: "Introduction", link: "/docs/getting-started" }],
-        },
-      ],
+      "/docs": sidebarGuide(),
     },
+
     footer: {
-      copyright: "© 2026 FAIR Data Innovations Hub. All rights reserved.",
+      message: "Released under the MIT License.",
+      copyright: "Copyright 2025-present | FAIR Data Innovations Hub",
     },
   },
 });
+
+function sidebarGuide() {
+  return [
+    {
+      text: "Getting Started",
+      collapsible: true,
+      items: [
+        { text: "Introduction", link: "/docs/intro" },
+        { text: "About Posters.science", link: "/docs/about" },
+        { text: "Creating an Account", link: "/docs/account" },
+      ],
+    },
+    {
+      text: "Sharing Posters",
+      collapsible: true,
+      items: [
+        { text: "Overview", link: "/docs/sharing" },
+        { text: "Uploading Your Poster", link: "/docs/upload" },
+        { text: "Reviewing Metadata", link: "/docs/metadata" },
+        { text: "Publishing to a Repository", link: "/docs/publish" },
+      ],
+    },
+    {
+      text: "Discovering Posters",
+      collapsible: true,
+      items: [
+        { text: "Searching the Registry", link: "/docs/search" },
+        { text: "Smart Search", link: "/docs/smart-search" },
+        { text: "Overview Page", link: "/docs/overview-page" },
+      ],
+    },
+    {
+      text: "Behind the Scenes",
+      collapsible: true,
+      items: [
+        { text: "The Poster Schema", link: "/docs/schema" },
+        { text: "Metadata Extraction", link: "/docs/extraction" },
+        { text: "Auto-Registration", link: "/docs/auto-registration" },
+        { text: "FAIR Principles for Posters", link: "/docs/fair" },
+      ],
+    },
+    {
+      text: "Policies",
+      collapsible: true,
+      items: [
+        { text: "Privacy Policy", link: "/docs/privacy" },
+        { text: "Terms of Use", link: "/docs/terms" },
+      ],
+    },
+    {
+      text: "Resources",
+      collapsible: true,
+      items: [
+        { text: "FAQ", link: "/docs/faq" },
+        { text: "Ecosystem", link: "/docs/ecosystem" },
+        { text: "Citing Posters.science", link: "/docs/citing" },
+        { text: "Contributing", link: "/docs/contributing" },
+      ],
+    },
+  ];
+}
