@@ -1,0 +1,60 @@
+---
+lang: en-US
+title: Reviewing Metadata
+description: How to review and edit extracted poster metadata
+head:
+  - - meta
+    - name: og:image
+      content: https://kalai.fairdataihub.org/api/generate?title=Posters.science%20Documentation&description=Reviewing%20Metadata&app=posters-science&org=fairdataihub
+---
+
+# :label: Reviewing Metadata
+
+After your poster is uploaded and processed, Posters.science presents the extracted metadata for your review. This step ensures that the information describing your poster is accurate before it gets published.
+
+<!-- ![Metadata Review](/metadata-review.png) -->
+
+## :hammer_and_wrench: How to review metadata
+
+The metadata editor is organized into sections, each covering a different aspect of your poster:
+
+1. **Title and Abstract**: The poster title and a description or abstract. If your poster includes an abstract section, the platform extracts it automatically.
+
+2. **Authors**: Names, affiliations, and ORCID iDs for each author. The platform looks up author identifiers in the [ORCID registry](https://orcid.org) and institutional identifiers in the [ROR registry](https://ror.org) to help fill these in.
+
+3. **Conference**: The name, location, dates, and acronym of the conference where the poster was presented.
+
+4. **Funding**: Grants and funding sources mentioned on the poster. The platform cross-references these against the [NIH Reporter](https://reporter.nih.gov/) and [NSF Award Search](https://www.nsf.gov/awardsearch/) databases.
+
+5. **Keywords and Research Field**: Subject terms and the broad research domain of the poster.
+
+6. **License**: The license under which your poster will be shared. Defaults to Creative Commons Attribution 4.0 (CC BY 4.0).
+
+## :bar_chart: Confidence indicators
+
+Each extracted field includes a confidence score that tells you how certain the platform is about the result. Fields with high confidence are pre-filled and ready to go. Fields with lower confidence are flagged so you know to double-check them.
+
+Confidence is based on several factors:
+
+- Whether the extracted text matches a standard format (e.g., a valid ORCID pattern).
+- Whether the value was confirmed against an external database (e.g., a matching ROR institution record).
+- How clearly the information appeared on the poster itself.
+
+::: tip
+Focus your review time on fields flagged with lower confidence. High-confidence fields have typically been verified against external databases and are unlikely to need correction.
+:::
+
+## :pencil2: Editing fields
+
+Click on any field to edit it. You can:
+
+- Correct misspellings or formatting issues from the extraction.
+- Add authors or affiliations that the AI missed.
+- Fill in conference details if they were not printed on the poster.
+- Change the license if CC BY 4.0 is not appropriate for your work.
+
+When done, you can either continue to the publishing step or save your progress and return later.
+
+::: warning
+If you close the browser without saving, your edits will be lost. Click `Save` to store your progress as a draft.
+:::
