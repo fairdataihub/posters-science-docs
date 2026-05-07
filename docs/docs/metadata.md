@@ -16,6 +16,8 @@ After your poster is uploaded and processed, Posters.science presents the extrac
 The metadata review page is only accessible after uploading a poster while signed in. See [Uploading Your Poster](./upload) for the first step.
 :::
 
+![Metadata Review Page](/metadata-page.png)
+
 ## How to review metadata
 
 The metadata editor is organized into sections, each covering a different aspect of your poster:
