@@ -59,11 +59,11 @@ export default defineConfig({
       },
       {
         text: "Developer Guide",
-        link: "https://fairdataihub.github.io/posters-science-dev-docs/",
+        link: "https://dev.posters.science",
       },
       {
         text: "Contact Us",
-        link: "https://tally.so/r/3E0dao",
+        link: "https://tally.so/r/RG8Avd",
       },
     ],
 
