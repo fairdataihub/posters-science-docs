@@ -22,7 +22,3 @@ If you already have an account, click `Log in` instead and sign in with your ema
 
 ![Sign Up Page](/signup-page.png)
 
-::: tip
-By signing up, you agree to the [Terms of Service](https://posters.science/terms). Your information is handled according to our [Privacy Policy](https://posters.science/privacy).
-:::
-

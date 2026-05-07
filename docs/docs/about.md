@@ -24,9 +24,9 @@ Posters.science addresses this gap. By making it fast and straightforward to sha
 
 The sharing process has three steps:
 
-1. **Upload** a PDF of your poster (and optionally an abstract).
-2. **Review** the metadata that the platform extracts automatically using AI. Edit anything that needs correction.
-3. **Publish** to Zenodo, or download a structured poster package for your own use.
+1. **[Upload](./upload)** a PDF of your poster (and optionally an abstract).
+2. **[Review](./metadata)** the metadata that the platform extracts automatically using AI. Edit anything that needs correction.
+3. **[Publish](./publish)** to Zenodo, or download a structured poster package for your own use.
 
 The platform also maintains a searchable registry of posters. It periodically indexes posters already published on Zenodo and Figshare, so even posters shared outside of Posters.science become discoverable through the registry.
 
