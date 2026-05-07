@@ -8,11 +8,11 @@ head:
       content: https://kalai.fairdataihub.org/api/generate?title=Posters.science%20Documentation&description=Metadata%20Extraction&app=posters-science&org=fairdataihub
 ---
 
-# :robot: Metadata Extraction
+# Metadata Extraction
 
 When you upload a poster, the platform reads it and extracts structured metadata automatically. This page explains what happens during that process and why the results are generally accurate enough to publish with minimal editing.
 
-## :gear: The extraction pipeline
+## The extraction pipeline
 
 Extraction happens in two stages:
 
@@ -22,7 +22,7 @@ Extraction happens in two stages:
 
 The LLM is given detailed instructions about what to look for and how to format the results. It uses examples of correctly extracted posters to guide its output.
 
-## :brain: The language model
+## The language model
 
 Posters.science uses [poster2json](https://github.com/fairdataihub/poster2json), an open source tool built specifically for this task. The extraction model is optimized for the layout and language patterns found on scientific posters, which differ from journal articles or web pages.
 
@@ -32,7 +32,7 @@ The model runs on local GPU hardware maintained by the FAIR Data Innovations Hub
 The extraction tool and its validation results are published openly. You can review the methodology and performance data in the [poster2json repository](https://github.com/fairdataihub/poster2json).
 :::
 
-## :mag: External database lookups
+## External database lookups
 
 After the initial extraction, the platform cross-references extracted values against external databases to improve accuracy:
 
@@ -43,7 +43,7 @@ After the initial extraction, the platform cross-references extracted values aga
 
 These lookups feed into the confidence scores you see during [metadata review](./metadata).
 
-## :chart_with_upwards_trend: Accuracy
+## Accuracy
 
 The extraction tool is validated against a set of manually annotated posters covering different research domains, layouts, and languages. The validation measures:
 

@@ -8,13 +8,13 @@ head:
       content: https://kalai.fairdataihub.org/api/generate?title=Posters.science%20Documentation&description=FAQ&app=posters-science&org=fairdataihub
 ---
 
-# :question: Frequently Asked Questions
+# Frequently Asked Questions
 
 ## General
 
 ### What is Posters.science?
 
-Posters.science is a free, open source platform for sharing and discovering scientific posters. It uses AI to extract metadata from poster files and helps you publish them to repositories like Zenodo or Figshare with a DOI.
+Posters.science is a free, open source platform for sharing and discovering scientific posters. It uses AI to extract metadata from poster files and helps you publish them to Zenodo with a DOI.
 
 ### Do I need an account to search for posters?
 
@@ -32,7 +32,7 @@ Posters.science is developed by the [FAIR Data Innovations Hub](https://fairdata
 
 ### What file formats can I upload?
 
-PDF, PNG, JPEG, TIFF, WEBP, BMP, GIF, PPTX, and SVG. PDF is the recommended format because it generally produces the best metadata extraction results.
+PDF, PNG, and JPEG. PDF is the recommended format because it generally produces the best metadata extraction results.
 
 ### How long does it take to share a poster?
 
@@ -40,7 +40,7 @@ Most posters can be shared in under five minutes. The AI extraction handles the 
 
 ### Can I edit the metadata after publishing?
 
-You can update metadata on the poster record in Posters.science. For changes to the repository record (Zenodo or Figshare), you would need to edit the record directly in the repository.
+You can update metadata on the poster record in Posters.science. For changes to the Zenodo record, you would need to edit the record directly on Zenodo.
 
 ### What license is applied to my poster?
 
@@ -60,10 +60,6 @@ The platform supports posters in multiple languages. The extraction model reads 
 
 Two sources: posters submitted directly through the platform, and posters automatically indexed from Zenodo and Figshare. See [Auto-Registration](./auto-registration) for details.
 
-### What is Smart Search?
-
-Smart Search lets you ask questions about the poster registry in plain language (e.g., "What posters on retinal imaging were presented at ARVO 2025?"). It uses AI to find relevant posters and generate a summary response. See [Smart Search](./smart-search) for details.
-
 ### Can I download search results?
 
 Yes. You can export your current search results as a JSON file.
@@ -76,7 +72,7 @@ No. The extraction model runs on local GPU hardware maintained by the FAIR Data 
 
 ### What is a DOI?
 
-A Digital Object Identifier (DOI) is a unique, permanent link to a research output. When you publish a poster through Posters.science, it receives a DOI from Zenodo or Figshare that you can use in citations, CVs, and grant reports.
+A Digital Object Identifier (DOI) is a unique, permanent link to a research output. When you publish a poster through Posters.science, it receives a DOI from Zenodo that you can use in citations, CVs, and grant reports.
 
 ### What is the poster JSON schema?
 

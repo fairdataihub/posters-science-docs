@@ -8,7 +8,7 @@ head:
       content: https://kalai.fairdataihub.org/api/generate?title=Posters.science%20Documentation&description=Reviewing%20Metadata&app=posters-science&org=fairdataihub
 ---
 
-# :label: Reviewing Metadata
+# Reviewing Metadata
 
 After your poster is uploaded and processed, Posters.science presents the extracted metadata for your review. This step ensures that the information describing your poster is accurate before it gets published.
 
@@ -16,7 +16,7 @@ After your poster is uploaded and processed, Posters.science presents the extrac
 The metadata review page is only accessible after uploading a poster while signed in. See [Uploading Your Poster](./upload) for the first step.
 :::
 
-## :hammer_and_wrench: How to review metadata
+## How to review metadata
 
 The metadata editor is organized into sections, each covering a different aspect of your poster:
 
@@ -32,21 +32,7 @@ The metadata editor is organized into sections, each covering a different aspect
 
 6. **License**: The license under which your poster will be shared. Defaults to Creative Commons Attribution 4.0 (CC BY 4.0).
 
-## :bar_chart: Confidence indicators
-
-Each extracted field includes a confidence score that tells you how certain the platform is about the result. Fields with high confidence are pre-filled and ready to go. Fields with lower confidence are flagged so you know to double-check them.
-
-Confidence is based on several factors:
-
-- Whether the extracted text matches a standard format (e.g., a valid ORCID pattern).
-- Whether the value was confirmed against an external database (e.g., a matching ROR institution record).
-- How clearly the information appeared on the poster itself.
-
-::: tip
-Focus your review time on fields flagged with lower confidence. High-confidence fields have typically been verified against external databases and are unlikely to need correction.
-:::
-
-## :pencil2: Editing fields
+## Editing fields
 
 Click on any field to edit it. You can:
 
@@ -55,8 +41,8 @@ Click on any field to edit it. You can:
 - Fill in conference details if they were not printed on the poster.
 - Change the license if CC BY 4.0 is not appropriate for your work.
 
-When done, you can either continue to the publishing step or save your progress and return later.
+When you are finished, click `Save Changes` to store your edits. You can then continue to the publishing step or come back later.
 
 ::: warning
-If you close the browser without saving, your edits will be lost. Click `Save` to store your progress as a draft.
+If you close the browser without clicking `Save Changes`, your edits will be lost.
 :::

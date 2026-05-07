@@ -8,11 +8,11 @@ head:
       content: https://kalai.fairdataihub.org/api/generate?title=Posters.science%20Documentation&description=About%20Posters.science&app=posters-science&org=fairdataihub
 ---
 
-# :sparkles: About Posters.science
+# About Posters.science
 
 Posters.science is a free and open source platform built by the [FAIR Data Innovations Hub](https://fairdataihub.org) for sharing and discovering scientific posters. It is designed to follow the [Findable, Accessible, Interoperable, Reusable (FAIR) Principles](https://www.go-fair.org/fair-principles/) so that poster content is not just stored but made ready for search, citation, and reuse.
 
-## :question: Why does this exist?
+## Why does this exist?
 
 Millions of scientific posters are presented at conferences every year. They contain early-stage findings, novel methods, and emerging results that often take years to appear in journal articles, if they ever do. Estimates suggest that fewer than 20% of presented posters are eventually published as papers, and the average time from poster to publication is around two years.
 
@@ -20,19 +20,17 @@ Despite this, the vast majority of posters disappear after the conference ends. 
 
 Posters.science addresses this gap. By making it fast and straightforward to share a poster with proper metadata, a DOI, and a permanent home in a trusted repository, the platform aims to make poster sharing a routine part of the research process.
 
-![Discover and share posters on Posters.science](/discovery-flow.gif)
-
-## :gear: How does it work?
+## How does it work?
 
 The sharing process has three steps:
 
 1. **Upload** a PDF of your poster (and optionally an abstract).
 2. **Review** the metadata that the platform extracts automatically using AI. Edit anything that needs correction.
-3. **Publish** to Zenodo or Figshare, or download a structured poster package for your own use.
+3. **Publish** to Zenodo, or download a structured poster package for your own use.
 
 The platform also maintains a searchable registry of posters. It periodically indexes posters already published on Zenodo and Figshare, so even posters shared outside of Posters.science become discoverable through the registry.
 
-## :busts_in_silhouette: Who is this for?
+## Who is this for?
 
 Posters.science is for anyone who presents or uses scientific posters:
 

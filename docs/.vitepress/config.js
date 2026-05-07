@@ -104,7 +104,6 @@ function sidebarGuide() {
       collapsible: true,
       items: [
         { text: "Searching the Registry", link: "/docs/search" },
-        { text: "Smart Search", link: "/docs/smart-search" },
         { text: "Overview Page", link: "/docs/overview-page" },
       ],
     },
@@ -116,14 +115,6 @@ function sidebarGuide() {
         { text: "Metadata Extraction", link: "/docs/extraction" },
         { text: "Auto-Registration", link: "/docs/auto-registration" },
         { text: "FAIR Principles for Posters", link: "/docs/fair" },
-      ],
-    },
-    {
-      text: "Policies",
-      collapsible: true,
-      items: [
-        { text: "Privacy Policy", link: "/docs/privacy" },
-        { text: "Terms of Use", link: "/docs/terms" },
       ],
     },
     {

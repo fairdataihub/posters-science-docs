@@ -8,7 +8,7 @@ head:
       content: https://kalai.fairdataihub.org/api/generate?title=Posters.science%20Documentation&description=Overview%20Page&app=posters-science&org=fairdataihub
 ---
 
-# :bar_chart: Overview Page
+# Overview Page
 
 The Overview page provides a snapshot of the Posters.science registry through interactive charts and statistics. It gives you a sense of the registry's scope, growth, and the research it covers.
 
@@ -16,7 +16,7 @@ The Overview page provides a snapshot of the Posters.science registry through in
 The Overview page is under active development. The visualizations described below reflect planned functionality.
 :::
 
-## :chart_with_upwards_trend: What you can see
+## What you can see
 
 The page displays several visualizations:
 
@@ -27,11 +27,11 @@ The page displays several visualizations:
 - **Funding sources**: The funding agencies and grants mentioned most frequently.
 - **Geography**: A map showing where poster authors are based, drawn from affiliation data.
 
-## :busts_in_silhouette: Collaboration patterns
+## Collaboration patterns
 
 The overview also highlights collaboration data: how many posters involve authors from multiple institutions, which organizations frequently collaborate, and how poster activity distributes across regions.
 
-## :arrows_counterclockwise: Data freshness
+## Data freshness
 
 The overview page reflects the current state of the registry. As new posters are shared through the platform or indexed from Zenodo and Figshare, the visualizations update to include them.
 

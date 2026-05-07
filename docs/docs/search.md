@@ -8,13 +8,13 @@ head:
       content: https://kalai.fairdataihub.org/api/generate?title=Posters.science%20Documentation&description=Searching%20the%20Registry&app=posters-science&org=fairdataihub
 ---
 
-# :mag: Searching the Registry
+# Searching the Registry
 
 The Posters.science registry contains thousands of scientific posters from Zenodo, Figshare, and direct submissions through the platform. You can search across all of them without creating an account.
 
 ![Discover Posters Page](/discover-page.png)
 
-## :hammer_and_wrench: How to search
+## How to search
 
 1. Go to the [Discover](https://posters.science/discover) page.
 2. Type your search terms into the search bar. The search supports keywords, author names, conference names, and phrases.
@@ -22,30 +22,18 @@ The Posters.science registry contains thousands of scientific posters from Zenod
 
 The search engine handles typos and partial matches, so you do not need to get the exact spelling right.
 
-## :control_knobs: Filtering results
+## Filtering results
 
-Use the filter menu to narrow your results by:
+Use the filter menu to narrow your results by **publication date**. Select a date range to limit results to posters published within a specific window.
 
-- **Author**: Find posters by a specific researcher.
-- **Publication date**: Limit results to a date range.
-- **Conference**: Filter by conference name or acronym (e.g., "ARVO 2025").
-- **Affiliation**: Search by institution or organization.
-- **Access type**: Show only open-access posters.
+## Sorting
 
-You can combine multiple filters. The result count updates as you add or remove filters.
+Results are sorted by newest first by default. You can also sort by:
 
-## :arrows_counterclockwise: Sorting
+- Oldest first
+- Most liked
 
-Results are sorted by relevance by default. You can also sort by:
-
-- Most recent
-- Most viewed
-- Alphabetical by title
-
-## :arrow_down: Exporting results
+## Exporting results
 
 Click the `Export` button to download your current search results as a JSON file. This is useful if you want to analyze poster metadata programmatically or keep a record of your search.
 
-::: tip
-For more flexible queries like "find posters about retinal imaging presented at ophthalmology conferences in the last two years," try [Smart Search](./smart-search) instead. It understands natural language and can interpret complex questions.
-:::
