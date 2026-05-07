@@ -16,7 +16,7 @@ When you upload a poster, the platform reads it and extracts structured metadata
 
 Extraction happens in two stages:
 
-1. **Text extraction**: The raw text is pulled from your poster file. For PDFs, a tool called [pdfalto](https://github.com/kermitt2/pdfalto) reads the embedded text layer. For images and other formats, a vision model reads the visible content using OCR.
+1. **Text extraction**: The raw text is pulled from your poster file. For PDFs, a tool called [pdfalto](https://github.com/kermitt2/pdfalto) reads the embedded text layer. For images (PNG and JPEG), a vision model reads the visible content using OCR.
 
 2. **Structured extraction**: The raw text is passed to a large language model (LLM) that identifies and organizes the information into schema fields: title, authors, affiliations, abstract, funding, conference details, and more.
 
@@ -41,7 +41,7 @@ After the initial extraction, the platform cross-references extracted values aga
 - **NIH Reporter and NSF**: Funding information is checked against the [NIH Reporter](https://reporter.nih.gov/) and [NSF Award Search](https://www.nsf.gov/awardsearch/) to verify grant numbers and funder names.
 - **Crossref**: Related publications mentioned on the poster are looked up via [Crossref](https://www.crossref.org/) to resolve DOIs.
 
-These lookups feed into the confidence scores you see during [metadata review](./metadata).
+These lookups help improve the accuracy of the values presented during [metadata review](./metadata).
 
 ## Accuracy
 

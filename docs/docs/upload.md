@@ -10,7 +10,7 @@ head:
 
 # Uploading Your Poster
 
-The first step in sharing your poster is uploading the file. Posters.science accepts a range of formats and handles the rest from there.
+The first step in sharing your poster is uploading the file. Posters.science accepts PDFs and images (PNG, JPEG) and handles the rest from there.
 
 ## How to upload
 

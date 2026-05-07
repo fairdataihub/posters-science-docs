@@ -27,7 +27,7 @@ When reporting a bug, include as much detail as you can: what you expected to ha
 
 Feature requests are welcome. Open an issue on the [posters-science](https://github.com/fairdataihub/posters-science/issues) repository and describe what you would like to see and why it would be useful.
 
-## :pencil2: Improving documentation
+## Improving documentation
 
 This documentation site is built with VitePress and hosted on GitHub. If you spot a typo, unclear wording, or a missing topic, you can click the "Edit this page on GitHub" link at the bottom of any page to propose a change directly.
 
