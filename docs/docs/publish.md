@@ -44,6 +44,10 @@ If you prefer not to publish to a repository right away, you can download a post
 When you download without publishing, the `poster.json` file will be incomplete according to the schema because no publisher has been assigned. Fields like DOI and repository identifiers will be missing until the poster is deposited in a repository.
 :::
 
+::: warning
+Once published through Posters.science, the record cannot be removed by the user. If you need a record taken down, contact the team at [info@fairdataihub.org](mailto:info@fairdataihub.org).
+:::
+
 ## After publishing
 
 Once your poster is published:

@@ -19,8 +19,6 @@ The first step in sharing your poster is uploading the file. Posters.science acc
 3. Drag and drop your poster file into the upload area, or click to open the file picker.
 4. Wait for the upload and processing to complete. This typically takes 10 to 30 seconds depending on file size.
 
-![Share a Poster Page](/share-page.png)
-
 ## Supported file formats
 
 Posters.science currently accepts the following formats:

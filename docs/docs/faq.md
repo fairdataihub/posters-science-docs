@@ -60,10 +60,6 @@ The platform supports posters in multiple languages. The extraction model reads 
 
 Two sources: posters submitted directly through the platform, and posters automatically indexed from Zenodo and Figshare. See [Auto-Registration](./auto-registration) for details.
 
-### Can I download search results?
-
-Yes. You can export your current search results as a JSON file.
-
 ## Technical
 
 ### Is my poster content sent to a third-party AI service?

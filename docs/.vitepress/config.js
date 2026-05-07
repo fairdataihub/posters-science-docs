@@ -104,7 +104,6 @@ function sidebarGuide() {
       collapsible: true,
       items: [
         { text: "Searching the Registry", link: "/docs/search" },
-        { text: "Overview Page", link: "/docs/overview-page" },
       ],
     },
     {

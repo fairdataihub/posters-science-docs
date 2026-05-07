@@ -26,6 +26,3 @@ If you already have an account, click `Log in` instead and sign in with your ema
 By signing up, you agree to the [Terms of Service](https://posters.science/terms). Your information is handled according to our [Privacy Policy](https://posters.science/privacy).
 :::
 
-## Your data
-
-Your account information is stored securely and used only for the purposes described in the [Privacy Policy](https://posters.science/privacy). You can remove your account at any time by contacting the team at [info@fairdataihub.org](mailto:info@fairdataihub.org).

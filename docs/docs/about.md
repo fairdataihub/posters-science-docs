@@ -38,3 +38,7 @@ Posters.science is for anyone who presents or uses scientific posters:
 - **Early-career scientists** looking for visibility and recognition beyond the conference hall.
 - **Conference organizers** interested in giving presenters a simple path to long-term poster archival.
 - **Anyone searching for research** who wants access to the early-stage findings that live in posters but rarely make it into journal databases.
+
+## Learn more
+
+To learn more about the state of scientific poster sharing and the motivation behind this project, see our preprint: [The State of Scientific Poster Sharing and Reuse](https://arxiv.org/abs/2604.21150).

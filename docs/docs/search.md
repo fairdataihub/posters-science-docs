@@ -33,7 +33,4 @@ Results are sorted by newest first by default. You can also sort by:
 - Oldest first
 - Most liked
 
-## Exporting results
-
-Click the `Export` button to download your current search results as a JSON file. This is useful if you want to analyze poster metadata programmatically or keep a record of your search.
 
