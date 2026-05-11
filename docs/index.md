@@ -10,11 +10,11 @@ hero:
   tagline: Documentation for the Posters.science platform.
   actions:
     - theme: brand
-      text: Get Started
-      link: /docs/intro
+      text: View Docs
+      link: /docs/about
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/fairdataihub/posters-science
+      text: Go to Posters.science
+      link: https://posters.science
 
 features:
   - icon: 📤

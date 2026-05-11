@@ -14,7 +14,7 @@ Posters.science is open source and we welcome contributions from the community. 
 
 ## Reporting bugs
 
-If you find a bug or something that does not work as expected, open an issue on the relevant GitHub repository:
+If you find a bug or something that does not work as expected, you can report it through our [feedback form](https://tally.so/r/RG8Avd) or by opening an issue on the relevant GitHub repository:
 
 - **Platform issues**: [posters-science/issues](https://github.com/fairdataihub/posters-science/issues)
 - **Schema issues**: [poster-json-schema/issues](https://github.com/fairdataihub/poster-json-schema/issues)
@@ -25,7 +25,7 @@ When reporting a bug, include as much detail as you can: what you expected to ha
 
 ## Suggesting features
 
-Feature requests are welcome. Open an issue on the [posters-science](https://github.com/fairdataihub/posters-science/issues) repository and describe what you would like to see and why it would be useful.
+Feature requests are welcome. The easiest way is to fill out our [feedback form](https://tally.so/r/RG8Avd). If you are comfortable with GitHub, you can also open an issue on the [posters-science](https://github.com/fairdataihub/posters-science/issues) repository and describe what you would like to see and why it would be useful.
 
 ## Improving documentation
 

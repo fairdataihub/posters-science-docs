@@ -22,7 +22,7 @@ If you use Posters.science in your research or reference it in a publication, pl
 
 ## Poster JSON Schema
 
-> FAIR Data Innovations Hub. (2026). Poster JSON Schema: A JSON schema for machine-actionable and FAIR posters. Available at [https://github.com/fairdataihub/poster-json-schema](https://github.com/fairdataihub/poster-json-schema).
+> FAIR Data Innovations Hub. (2026). Poster JSON Schema: A JSON schema for machine-actionable and FAIR posters (v0.2). Zenodo. [https://doi.org/10.5281/zenodo.20125306](https://doi.org/10.5281/zenodo.20125306)
 
 ## BibTeX
 
@@ -33,6 +33,15 @@ If you use Posters.science in your research or reference it in a publication, pl
   year      = {2026},
   url       = {https://posters.science},
   note      = {FAIR Data Innovations Hub}
+}
+
+@misc{posterjsonschema2026,
+  author    = {{FAIR Data Innovations Hub}},
+  title     = {Poster JSON Schema: A JSON schema for machine-actionable and FAIR posters},
+  year      = {2026},
+  version   = {0.2},
+  doi       = {10.5281/zenodo.20125306},
+  publisher = {Zenodo}
 }
 
 @misc{poster2json2026,

@@ -20,7 +20,7 @@ The schema was developed in collaboration with the [University of California Cur
 
 ## Built on DataCite
 
-The schema is based on the [DataCite Metadata Schema](https://schema.datacite.org/) (version 4.7), the same standard used to describe over 10 million DOI-registered research objects worldwide. This means poster metadata can be mapped to DataCite records and Zenodo deposits without losing information.
+The schema is based on the [DataCite Metadata Schema](https://schema.datacite.org/) (version 4.7), the same standard used to describe over 150 million DOI-registered research objects worldwide. This means poster metadata can be mapped to DataCite records and Zenodo deposits without losing information.
 
 The DataCite core provides fields for:
 
@@ -48,7 +48,7 @@ On top of the DataCite core, the schema adds fields specific to scientific poste
 
 ## Versioning
 
-The schema follows [semantic versioning](https://semver.org/). The current version is **v0.2**. Each release is archived on Zenodo with its own DOI, and the schema repository maintains a [changelog](https://github.com/fairdataihub/poster-json-schema/blob/main/CHANGELOG.md) documenting every change.
+The schema follows [semantic versioning](https://semver.org/). The current version is **[v0.2](https://doi.org/10.5281/zenodo.20125306)**. Each release is archived on Zenodo with its own DOI, and the schema repository maintains a [changelog](https://github.com/fairdataihub/poster-json-schema/blob/main/CHANGELOG.md) documenting every change.
 
 ::: info
 The schema is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), which means you can use and adapt it for your own purposes with attribution.

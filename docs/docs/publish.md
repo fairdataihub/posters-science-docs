@@ -12,7 +12,7 @@ head:
 
 The final step in sharing your poster is publishing it. Posters.science connects to [Zenodo](https://zenodo.org), a trusted open repository operated by CERN, so your poster gets a permanent home and a citable DOI.
 
-## How to publish
+## Zenodo
 
 1. After reviewing your metadata, click `Save Changes and Continue`.
 2. Review the summary of what will be deposited.
@@ -22,19 +22,13 @@ The platform creates a record on Zenodo that includes:
 
 - Your original poster file (PDF or image).
 - A structured metadata file (`poster.json`) following the [Poster JSON Schema](./schema).
-- All metadata fields mapped to Zenodo's deposit format.
+- All metadata fields mapped to Zenodo's deposit format (see the [Zenodo Deposit Details](./zenodo-mapping) for the full field-by-field mapping).
+
+Your poster is deposited as a record on Zenodo under your account. A DOI is assigned automatically and stored in your poster's record on Posters.science.
 
 ::: info
 Publishing is a one-way action. Once the record is created on Zenodo, it receives a DOI and becomes publicly accessible. You can update metadata after publication, but the DOI is permanent. Zenodo allows you to [delete a record within 30 days](https://help.zenodo.org/docs/deposit/manage-records/#delete), but the DOI itself is never reusable.
 :::
-
-## Zenodo
-
-When you publish to Zenodo through Posters.science:
-
-- Your poster is deposited in the [Posters.science community on Zenodo](https://zenodo.org/communities/posters-science).
-- The metadata is mapped to Zenodo's deposit format, including authors, affiliations, conference details, and funding.
-- A DOI is assigned automatically.
 
 ## Downloading instead
 
@@ -45,7 +39,7 @@ When you download without publishing, the `poster.json` file will be incomplete 
 :::
 
 ::: warning
-Once published through Posters.science, the record cannot be removed by the user. If you need a record taken down, contact the team at [info@fairdataihub.org](mailto:info@fairdataihub.org).
+Once published through Posters.science, the record cannot be removed by the user. If you need a record taken down, [contact the team](https://fairdataihub.org/contact-us).
 :::
 
 ## After publishing
@@ -54,4 +48,4 @@ Once your poster is published:
 
 - The record appears in the Posters.science registry and becomes searchable.
 - You receive a DOI that you can add to your CV, reference in papers, or include in grant reports.
-- The poster's metadata is available in machine-readable format for indexing and discovery.
+- Your poster's metadata is available as a structured `poster.json` file that other tools and services can read and process. See [Zenodo Deposit Details](./zenodo-mapping) for what this file contains.

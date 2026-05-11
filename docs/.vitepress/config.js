@@ -55,7 +55,7 @@ export default defineConfig({
     nav: [
       {
         text: "User Guide",
-        link: "/docs/intro",
+        link: "/docs/about",
       },
       {
         text: "Developer Guide",
@@ -84,9 +84,7 @@ function sidebarGuide() {
       text: "Getting Started",
       collapsible: true,
       items: [
-        { text: "Introduction", link: "/docs/intro" },
-        { text: "About Posters.science", link: "/docs/about" },
-        { text: "Creating an Account", link: "/docs/account" },
+        { text: "About", link: "/docs/about" },
       ],
     },
     {
@@ -94,6 +92,7 @@ function sidebarGuide() {
       collapsible: true,
       items: [
         { text: "Overview", link: "/docs/sharing" },
+        { text: "Creating an Account", link: "/docs/account" },
         { text: "Uploading Your Poster", link: "/docs/upload" },
         { text: "Reviewing Metadata", link: "/docs/metadata" },
         { text: "Publishing to a Repository", link: "/docs/publish" },
@@ -111,6 +110,7 @@ function sidebarGuide() {
       collapsible: true,
       items: [
         { text: "The Poster Schema", link: "/docs/schema" },
+        { text: "Zenodo Deposit Details", link: "/docs/zenodo-mapping" },
         { text: "Metadata Extraction", link: "/docs/extraction" },
         { text: "Auto-Registration", link: "/docs/auto-registration" },
         { text: "FAIR Principles for Posters", link: "/docs/fair" },
@@ -123,6 +123,7 @@ function sidebarGuide() {
         { text: "FAQ", link: "/docs/faq" },
         { text: "Ecosystem", link: "/docs/ecosystem" },
         { text: "Citing Posters.science", link: "/docs/citing" },
+        { text: "Schema Crosswalk", link: "https://github.com/fairdataihub/poster-json-schema/blob/main/crosswalk/zenodo.md" },
         { text: "Contributing", link: "/docs/contributing" },
       ],
     },
