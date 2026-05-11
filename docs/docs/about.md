@@ -36,6 +36,6 @@ To learn more about the state of scientific poster sharing and the motivation be
 
 ## Disclosure
 
-The development of Posters.science is supported by a grant from The Navigation Fund (View grant record on DataCite Commons).
+The development of Posters.science is supported by a grant from [The Navigation Fund](https://www.navigation.org/) ([View grant record on DataCite Commons](https://commons.datacite.org/doi.org/10.71707/rk36-9x79)).
 
 This documentation is developed and maintained with help from Claude.
