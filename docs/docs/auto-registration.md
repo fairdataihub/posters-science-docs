@@ -44,7 +44,7 @@ Auto-registered posters display their original repository source (Zenodo or Figs
 
 ## License policy
 
-Extracting structured metadata from a poster using AI constitutes a derivative work. Not all licenses permit redistribution of derivatives, so the platform applies a license policy during auto-registration to respect the rights of poster authors.
+Extracting structured metadata from a poster using AI constitutes a derivative work. The platform checks each poster's license before processing. If the license does not clearly grant permission to redistribute derivatives, no content is extracted from the poster file. Only repository metadata is retained.
 
 ### Included licenses
 
@@ -63,7 +63,7 @@ Posters published under the following licenses permit derivative works. For thes
 
 ### Excluded licenses
 
-Posters under the following licenses do not grant permission to create or redistribute derivatives. For these posters, only repository metadata is retained (identifiers, authors, title, dates, publisher, license, funding, conference). No PDF extraction, thumbnails, or AI-generated content is included.
+Posters under the following licenses do not grant permission to create or redistribute derivatives. No content is extracted from the poster file for these posters. Only repository metadata is retained (identifiers, authors, title, dates, publisher, license, funding, conference).
 
 | Category | Licenses | Reason |
 |----------|----------|--------|
