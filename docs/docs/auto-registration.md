@@ -42,6 +42,45 @@ The scraper runs periodically to pick up new poster records. When a new poster a
 Auto-registered posters display their original repository source (Zenodo or Figshare) in the registry. The platform links back to the original record so you can always access the poster from its primary home.
 :::
 
+## License policy
+
+Extracting structured metadata from a poster using AI constitutes a derivative work. Not all licenses permit redistribution of derivatives, so the platform applies a license policy during auto-registration to respect the rights of poster authors.
+
+### Included licenses
+
+Posters published under the following licenses permit derivative works. For these posters, the platform performs full PDF extraction (structured text, captions, research field), collects repository metadata, and generates a thumbnail.
+
+| Category | Licenses |
+|----------|----------|
+| Public domain | CC0-1.0 |
+| CC Attribution | CC-BY-4.0, CC-BY-3.0, CC-BY-2.5, CC-BY-2.0, CC-BY-1.0 |
+| CC Attribution-ShareAlike | CC-BY-SA-4.0, CC-BY-SA-3.0, CC-BY-SA-2.5, CC-BY-SA-2.0 |
+| CC Attribution-NonCommercial | CC-BY-NC-4.0, CC-BY-NC-3.0, CC-BY-NC-2.5, CC-BY-NC-2.0 |
+| CC Attribution-NonCommercial-ShareAlike | CC-BY-NC-SA-4.0, CC-BY-NC-SA-3.0, CC-BY-NC-SA-2.5, CC-BY-NC-SA-2.0 |
+| Software (permissive) | MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause, ISC, Unlicense, MPL-2.0 |
+| Software (copyleft) | GPL-3.0, GPL-2.0, LGPL-3.0, LGPL-2.1 |
+| Zenodo non-SPDX | other-open, other-pd |
+
+### Excluded licenses
+
+Posters under the following licenses do not grant permission to create or redistribute derivatives. For these posters, only repository metadata is retained (identifiers, authors, title, dates, publisher, license, funding, conference). No PDF extraction, thumbnails, or AI-generated content is included.
+
+| Category | Licenses | Reason |
+|----------|----------|--------|
+| No-Derivatives | CC-BY-ND, CC-BY-NC-ND (all versions) | ND explicitly prohibits derivative works |
+| Restrictive | All Rights Reserved, In Copyright | No redistribution permitted |
+| Unresolved | Copyright not evaluated, Copyright undetermined | Cannot confirm permission |
+| Unknown terms | other-at, other-closed, other-nc, other | No defined license terms to evaluate |
+| Missing | No license specified | Cannot confirm permission; treated as restrictive |
+
+### New licenses
+
+Licenses not listed in either category are added to a waiting list for manual review before any extraction is performed.
+
+::: info
+The full license policy with implementation details is maintained in the [extraction pipeline repository](https://github.com/fairdataihub/poster-repo-to-json/blob/main/docs/LICENSE_POLICY.md).
+:::
+
 ## Registry coverage
 
 As of early 2026, the registry contains over 24,000 posters from automated collection, in addition to posters submitted directly through the platform. This makes Posters.science one of the largest searchable indexes of scientific posters available.
