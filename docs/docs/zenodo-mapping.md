@@ -14,6 +14,10 @@ When you publish a poster through Posters.science, the platform creates a deposi
 
 This page explains exactly what gets sent, what the platform adds on your behalf, and what does not transfer to Zenodo.
 
+## How the upload works
+
+The platform writes metadata to Zenodo in two passes. The first pass uses Zenodo's legacy deposit API, which has limited support for structured fields. A second pass then updates the record through the InvenioRDM API with richer data, including separate given/family names, all author affiliations (with ROR IDs), name types, funder names, and typed descriptions. This means the final Zenodo record is more complete than what the legacy API alone would produce.
+
 ## Fields you provide
 
 These fields come from the metadata you review and edit before publishing. They are mapped to Zenodo's deposit format with minimal changes.
@@ -21,13 +25,14 @@ These fields come from the metadata you review and edit before publishing. They 
 | Your metadata | What Zenodo receives |
 |---------------|----------------------|
 | Title | Used as the deposit title |
-| Abstract or description | Used as the deposit description |
-| Authors | Names, affiliations, and ORCID iDs mapped to Zenodo's creator fields |
+| Abstract or description | Used as the deposit description. If you provide a submission abstract, it is sent as an additional typed description ("abstract") through the InvenioRDM API. |
+| Authors | Names, affiliations, ORCID iDs, and name type (personal or organizational) mapped to Zenodo's creator fields |
 | Keywords | Collected into a flat list of keywords |
 | Conference name, location, and dates | Mapped to Zenodo's conference metadata fields |
 | License | Matched to a Zenodo license identifier (default: CC BY 4.0) |
-| Related identifiers | DOIs of related papers or datasets, with their relationship type |
-| Language | Sent as an ISO language code |
+| Related identifiers | DOIs of related papers or datasets, with their relationship type and resource type |
+| Funding | Funder name and award number. Each grant is validated against Zenodo's awards database; see details below. |
+| Language | Sent as an ISO 639-3 language code (e.g., "eng") |
 | Version | Passed through directly |
 | Publication year | Used as the publication date |
 
@@ -39,6 +44,8 @@ These fields are set automatically by the platform. You do not see or edit them 
 |-------|------------------------|
 | Resource type | Set to "poster" on every deposit |
 | DOI | Pre-reserved from Zenodo before publishing. The assigned DOI is stored in your poster record on Posters.science. |
+| Publication date | An "Issued" date is recorded when the poster is published to Zenodo |
+| Publisher | Set to "Zenodo" (since Zenodo is the hosting repository) |
 | Poster file | Your original PDF or image, uploaded as the primary file |
 | Metadata file | A `poster.json` file following the [Poster JSON Schema](./schema), included alongside your poster file |
 
@@ -48,11 +55,10 @@ Some fields you provide go through formatting or validation before they reach Ze
 
 | Field | What changes |
 |-------|-------------|
-| Author names | Reformatted to "Family, Given" order if not already in that format |
-| Affiliations | Only the first affiliation per author is sent. Zenodo accepts a single affiliation string, not a list. All affiliations are preserved in the poster.json file. |
-| Funding | Each grant is validated against Zenodo's awards database. Grants that match a known award use Zenodo's canonical identifier. Grants with no match are not included in the Zenodo deposit, but they are still preserved in the poster.json file. |
-| Conference dates | Start and end dates are combined into a single date range string. |
-| Language code | Two-letter codes (like "en") are accepted by Zenodo and converted to three-letter codes (like "eng") automatically on their end. |
+| Author names | Reformatted to "Family, Given" order if not already in that format. The InvenioRDM pass also sends given name and family name as separate fields. |
+| Affiliations | The legacy API sends only the first affiliation per author as a plain string. The InvenioRDM pass then updates with all affiliations, including ROR identifiers where available. |
+| Funding | Each grant is validated against Zenodo's awards database. Grants that match a known award use Zenodo's canonical identifier. The InvenioRDM pass also sends funder name (with optional ROR-based funder ID), award number, and award title. Grants with no Zenodo match are still preserved in the poster.json file. |
+| Conference dates | Start and end dates are combined into a single date range string (e.g., "2025-10-15 - 2025-10-17"). |
 
 ## Fields that stay in poster.json only
 
