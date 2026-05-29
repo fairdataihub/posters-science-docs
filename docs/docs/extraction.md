@@ -16,7 +16,7 @@ When you upload a poster, the platform reads it and extracts structured metadata
 
 Extraction happens in two stages:
 
-1. **Text extraction**: The raw text is pulled from your poster file. For PDFs, a tool called [pdfalto](https://github.com/kermitt2/pdfalto) reads the embedded text layer. For images (PNG and JPEG), a vision model reads the visible content using OCR.
+1. **Text extraction**: The raw text is pulled from your poster file. For PDFs, a tool called [pdfplumber](https://github.com/jsvine/pdfplumber) reads the embedded text layer and reconstructs the reading order across multi-column layouts. For images (PNG and JPEG), a vision model reads the visible content using OCR.
 
 2. **Structured extraction**: The raw text is passed to a large language model (LLM) that identifies and organizes the information into schema fields: title, authors, affiliations, abstract, funding, conference details, and more.
 
@@ -51,4 +51,4 @@ The extraction tool is validated against a set of manually annotated posters cov
 - **Field accuracy**: How well the extracted fields match the ground truth annotations.
 - **Number capture**: Whether numerical values (grant numbers, dates, statistics) were correctly extracted.
 
-Current validation results show a pass rate above 95% across the test set. Details and per-poster results are available in the [poster2json evaluation documentation](https://github.com/fairdataihub/poster2json/blob/main/docs/evaluation.md).
+Current validation results show a pass rate of 95% (19 of 20 posters) across the test set. Details and per-poster results are available in the [poster2json evaluation documentation](https://github.com/fairdataihub/poster2json/blob/main/docs/evaluation.md).
