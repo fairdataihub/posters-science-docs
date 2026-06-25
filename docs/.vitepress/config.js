@@ -113,6 +113,7 @@ function sidebarGuide() {
         { text: "Zenodo Deposit Details", link: "/docs/zenodo-mapping" },
         { text: "Metadata Extraction", link: "/docs/extraction" },
         { text: "Auto-Registration", link: "/docs/auto-registration" },
+        { text: "Metrics", link: "/docs/metrics" },
         { text: "FAIR Principles for Posters", link: "/docs/fair" },
       ],
     },
