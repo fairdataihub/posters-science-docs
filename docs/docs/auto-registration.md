@@ -93,7 +93,7 @@ A deposit's license is an offer to whoever downloads it, so each archive carries
 
 | Archive | License | Contains | DOI |
 |---------|---------|----------|-----|
-| CC0 | CC0-1.0 | Public domain posters, plus the metadata-only record for every excluded poster | *(pending)* |
+| CC0 | CC0-1.0 | Public domain posters, plus the metadata-only records for excluded licenses | *(pending)* |
 | CC-BY | CC-BY-4.0 | CC Attribution posters (all versions) and permissive software licenses | *(pending)* |
 | CC-BY-SA | CC-BY-SA-4.0 | ShareAlike posters | *(pending)* |
 | CC-BY-NC | CC-BY-NC-4.0 | NonCommercial posters | *(pending)* |
@@ -103,7 +103,9 @@ ShareAlike and NonCommercial restrict different things: ShareAlike governs how y
 
 Each record keeps its own license in `rightsList`, and that per-poster license is what governs reuse of that poster. The archive-level license reflects the most restrictive license among the posters whose content it carries.
 
-Metadata for every poster is openly licensed regardless of the poster's own terms, because repository deposit metadata from Zenodo and Figshare is itself CC0. That is why excluded posters can still be listed, searched, and cited, just without their extracted content or thumbnail. All such metadata-only records are collected in the CC0 archive, which therefore holds one record for every poster in the collection.
+Every poster appears in exactly one archive, so nothing is duplicated across them. A poster sits in the archive for its own license and carries its extracted content where we hold it, or its metadata alone where we do not. Excluded licenses have no archive of their own, so those metadata-only records travel with the CC0 archive.
+
+Metadata for every poster is openly licensed regardless of the poster's own terms, because repository deposit metadata from Zenodo and Figshare is itself CC0. That is why excluded posters can still be listed, searched, and cited, just without their extracted content or thumbnail.
 
 ::: info
 The full license policy with implementation details is maintained in the [extraction pipeline repository](https://github.com/fairdataihub/poster-repo-to-json/blob/main/docs/LICENSE_POLICY.md).
