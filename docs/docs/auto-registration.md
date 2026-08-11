@@ -52,30 +52,58 @@ Posters published under the following licenses permit derivative works. For thes
 
 | Category | Licenses |
 |----------|----------|
-| Public domain | CC0-1.0 |
-| CC Attribution | CC-BY-4.0, CC-BY-3.0, CC-BY-2.5, CC-BY-2.0, CC-BY-1.0 |
+| Public domain | CC0-1.0, CC-PDDC, other-pd, ODC-PDDL |
+| CC Attribution | CC-BY-4.0, CC-BY-3.0 (incl. ported, e.g. 3.0-US), CC-BY-2.5, CC-BY-2.0, CC-BY-1.0 |
 | CC Attribution-ShareAlike | CC-BY-SA-4.0, CC-BY-SA-3.0, CC-BY-SA-2.5, CC-BY-SA-2.0 |
 | CC Attribution-NonCommercial | CC-BY-NC-4.0, CC-BY-NC-3.0, CC-BY-NC-2.5, CC-BY-NC-2.0 |
 | CC Attribution-NonCommercial-ShareAlike | CC-BY-NC-SA-4.0, CC-BY-NC-SA-3.0, CC-BY-NC-SA-2.5, CC-BY-NC-SA-2.0 |
 | Software (permissive) | MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause, ISC, Unlicense, MPL-2.0 |
-| Software (copyleft) | GPL-3.0, GPL-2.0, LGPL-3.0, LGPL-2.1 |
-| Zenodo non-SPDX | other-open, other-pd |
+| Software (copyleft) | GPL-3.0, GPL-2.0, LGPL-3.0, LGPL-2.1, AGPL |
+
+Copyleft licenses (the GPL family) permit extraction, but they require any derivative to be distributed under the same license. Because we do not publish a GPL-licensed archive, those posters are included as metadata only in our published archives. See [How posters are redistributed](#how-posters-are-redistributed) below.
 
 ### Excluded licenses
 
-Posters under the following licenses do not grant permission to create or redistribute derivatives. No content is extracted from the poster file for these posters. Only repository metadata is retained (identifiers, authors, title, dates, publisher, license, funding, conference).
+Posters under the following licenses do not grant permission to create or redistribute derivatives. No content is extracted from the poster file for these posters. Only repository metadata is retained (identifiers, authors, title, dates, publisher, license, funding, conference), and no thumbnail is generated.
 
 | Category | Licenses | Reason |
 |----------|----------|--------|
 | No-Derivatives | CC-BY-ND, CC-BY-NC-ND (all versions) | ND explicitly prohibits derivative works |
-| Restrictive | All Rights Reserved, In Copyright | No redistribution permitted |
-| Unresolved | Copyright not evaluated, Copyright undetermined | Cannot confirm permission |
-| Unknown terms | other-at, other-closed, other-nc, other | No defined license terms to evaluate |
+| Restrictive | All Rights Reserved, In Copyright (including "Educational Use Permitted" and "Rights-Holder Unlocatable" variants) | No redistribution permitted |
+| Unresolved | Copyright not evaluated, Copyright undetermined, notspecified | Cannot confirm permission |
+| Unknown terms | other-at, other-closed, other-nc, other, other-open | No defined license terms to evaluate |
+| Read-only grants | zenodo-freetoread-1.0 | Grants reading only, with no derivative or redistribution right |
 | Missing | No license specified | Cannot confirm permission; treated as restrictive |
 
 ### New licenses
 
-Licenses not listed in either category are added to a waiting list for manual review before any extraction is performed.
+Licenses not listed in either category are added to a waiting list for manual review before any extraction is performed. Two things commonly land there:
+
+- **Open licenses we have not catalogued yet** (for example ODC-PDDL, AFL-3.0, Etalab-2.0, ODC-BY). These are reviewed and added to the appropriate category.
+- **Values that are not licenses at all.** A small number of deposits carry a grant code, a project title, or a contact message in the rights field. These are treated as "no license specified" and reported to the source repository as a metadata error.
+
+## How posters are redistributed
+
+The full poster archive is published on Zenodo as **five license-separated deposits**. Each poster appears in exactly one, chosen by its own license.
+
+A deposit's license is an offer to whoever downloads it, so each archive carries a license that everything inside it can legitimately be shared under. The deciding question for each poster is whether its license allows an adaptation to be released under different terms:
+
+- **Permissive licenses allow it.** Public domain (CC0), plain CC Attribution, and the permissive software licenses (MIT, BSD, Apache-2.0) can be shared under CC-BY-4.0, provided the original copyright and permission notices travel with the record. They do.
+- **ShareAlike and copyleft do not.** CC-BY-SA and CC-BY-NC-SA require adaptations under the same license, so they get their own archives. GPL-family licenses require the same and have no Creative Commons equivalent, so those posters are metadata only.
+
+| Archive | License | Contains | DOI |
+|---------|---------|----------|-----|
+| CC0 | CC0-1.0 | Public domain posters, plus the metadata-only record for every excluded poster | *(pending)* |
+| CC-BY | CC-BY-4.0 | CC Attribution posters (all versions) and permissive software licenses | *(pending)* |
+| CC-BY-SA | CC-BY-SA-4.0 | ShareAlike posters | *(pending)* |
+| CC-BY-NC | CC-BY-NC-4.0 | NonCommercial posters | *(pending)* |
+| CC-BY-NC-SA | CC-BY-NC-SA-4.0 | NonCommercial ShareAlike posters | *(pending)* |
+
+ShareAlike and NonCommercial restrict different things: ShareAlike governs how you must license anything you build from a poster, while NonCommercial governs whether you may use it commercially. A poster carrying both therefore belongs in neither the ShareAlike nor the NonCommercial archive, and gets its own.
+
+Each record keeps its own license in `rightsList`, and that per-poster license is what governs reuse of that poster. The archive-level license reflects the most restrictive license among the posters whose content it carries.
+
+Metadata for every poster is openly licensed regardless of the poster's own terms, because repository deposit metadata from Zenodo and Figshare is itself CC0. That is why excluded posters can still be listed, searched, and cited, just without their extracted content or thumbnail. All such metadata-only records are collected in the CC0 archive, which therefore holds one record for every poster in the collection.
 
 ::: info
 The full license policy with implementation details is maintained in the [extraction pipeline repository](https://github.com/fairdataihub/poster-repo-to-json/blob/main/docs/LICENSE_POLICY.md).
