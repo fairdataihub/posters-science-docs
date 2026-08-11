@@ -14,7 +14,7 @@ Not every poster in the Posters.science registry was submitted through the platf
 
 ## Why auto-register?
 
-Tens of thousands of scientific posters are already published across open repositories. As of early 2026, Zenodo hosts over 17,000 poster records and Figshare hosts over 7,000. These posters are already publicly available, but they are scattered across different platforms with inconsistent metadata. Auto-registration brings them together into a single searchable registry.
+Tens of thousands of scientific posters are already published across open repositories. As of early 2026, Zenodo hosts over 24,000 poster records and Figshare hosts over 7,000. These posters are already publicly available, but they are scattered across different platforms with inconsistent metadata. Auto-registration brings them together into a single searchable registry.
 
 ## How it works
 
