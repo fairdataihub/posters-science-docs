@@ -44,11 +44,11 @@ Auto-registered posters display their original repository source (Zenodo or Figs
 
 ## License policy
 
-Extracting structured metadata from a poster using AI constitutes a derivative work. The platform checks each poster's license before processing. If the license does not clearly grant permission to redistribute derivatives, no content is extracted from the poster file. Only repository metadata is retained.
+Extracting structured metadata from a poster using AI constitutes a derivative work. The platform checks each poster's license before processing. If the license does not clearly grant permission to redistribute derivatives, no poster extracted metadata is produced. Only repository metadata is retained.
 
 ### Included licenses
 
-Posters published under the following licenses permit derivative works. For these posters, the platform performs full PDF extraction (structured text, captions, research field), collects repository metadata, and generates a thumbnail.
+Posters published under the following licenses permit derivative works. For these posters the platform produces poster extracted metadata, meaning the structured metadata and content read out of the poster file itself (section text, captions, research field), alongside the repository metadata, and generates a thumbnail.
 
 | Category | Licenses |
 |----------|----------|
@@ -60,11 +60,11 @@ Posters published under the following licenses permit derivative works. For thes
 | Software (permissive) | MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause, ISC, Unlicense, MPL-2.0 |
 | Software (copyleft) | GPL-3.0, GPL-2.0, LGPL-3.0, LGPL-2.1, AGPL |
 
-Copyleft licenses (the GPL family) permit extraction, but they require any derivative to be distributed under the same license. Because we do not publish a GPL-licensed archive, those posters are included as metadata only in our published archives. See [How posters are redistributed](#how-posters-are-redistributed) below.
+Copyleft licenses (the GPL family) permit extraction, but they require any derivative to be distributed under the same license. Because we do not publish a GPL-licensed corpus, those posters are included as repository metadata only in our published corpora. See [How posters are redistributed](#how-posters-are-redistributed) below.
 
 ### Excluded licenses
 
-Posters under the following licenses do not grant permission to create or redistribute derivatives. No content is extracted from the poster file for these posters. Only repository metadata is retained (identifiers, authors, title, dates, publisher, license, funding, conference), and no thumbnail is generated.
+Posters under the following licenses do not grant permission to create or redistribute derivatives. No poster extracted metadata is produced for these posters. Only repository metadata is retained (identifiers, authors, title, dates, publisher, license, funding, conference), and no thumbnail is generated.
 
 | Category | Licenses | Reason |
 |----------|----------|--------|
@@ -84,28 +84,28 @@ Licenses not listed in either category are added to a waiting list for manual re
 
 ## How posters are redistributed
 
-The full poster archive is published on Zenodo as **five license-separated corpora**. Each poster appears in exactly one, chosen by its own license.
+The full registry is published on Zenodo as **five license-separated corpora**. Each poster appears in exactly one, chosen by its own license. For the record counts, versions and DOIs, see [Bulk Corpus](/docs/bulk-corpus).
 
 A deposit's license is an offer to whoever downloads it, so each corpus carries a license that everything inside it can legitimately be shared under. The deciding question for each poster is whether its license allows an adaptation to be released under different terms:
 
 - **Permissive licenses allow it.** Public domain (CC0), plain CC Attribution, and the permissive software licenses (MIT, BSD, Apache-2.0) can be shared under CC-BY-4.0, provided the original copyright and permission notices travel with the record. They do.
-- **ShareAlike and copyleft do not.** CC-BY-SA and CC-BY-NC-SA require adaptations under the same license, so they get their own corpora. GPL-family licenses require the same and have no Creative Commons equivalent, so those posters are metadata only.
+- **ShareAlike and copyleft do not.** CC-BY-SA and CC-BY-NC-SA require adaptations under the same license, so they get their own corpora. GPL-family licenses require the same and have no Creative Commons equivalent, so those posters carry repository metadata only.
 
 | Corpus | Released under | Contains | DOI |
 |--------|----------------|----------|-----|
-| 1. CC0 | CC0-1.0 | Public domain posters, plus the metadata-only records for excluded licenses | [10.5281/zenodo.21924695](https://doi.org/10.5281/zenodo.21924695) |
+| 1. CC0 | CC0-1.0 | Public domain posters, plus the repository-metadata-only records for excluded licenses | [10.5281/zenodo.21924695](https://doi.org/10.5281/zenodo.21924695) |
 | 2. CC-BY-4.0 | CC-BY-4.0 | CC Attribution posters (all versions) and permissive software licenses | [10.5281/zenodo.21924848](https://doi.org/10.5281/zenodo.21924848) |
 | 3. CC-BY-SA 4.0 | CC-BY-SA-4.0 | ShareAlike posters | [10.5281/zenodo.21925147](https://doi.org/10.5281/zenodo.21925147) |
 | 4. CC-BY-NC 4.0 | CC-BY-NC-4.0 | NonCommercial posters | [10.5281/zenodo.21925170](https://doi.org/10.5281/zenodo.21925170) |
 | 5. CC-BY-NC-SA 4.0 | CC-BY-NC-SA-4.0 | NonCommercial ShareAlike posters | [10.5281/zenodo.21925181](https://doi.org/10.5281/zenodo.21925181) |
 
-ShareAlike and NonCommercial restrict different things: ShareAlike governs how you must license anything you build from a poster, while NonCommercial governs whether you may use it commercially. A poster carrying both therefore belongs in neither the ShareAlike nor the NonCommercial archive, and gets its own.
+ShareAlike and NonCommercial restrict different things: ShareAlike governs how you must license anything you build from a poster, while NonCommercial governs whether you may use it commercially. A poster carrying both therefore belongs in neither the ShareAlike nor the NonCommercial corpus, and gets its own.
 
-Each record keeps its own license in `rightsList`, and that per-poster license is what governs reuse of that poster. The archive-level license reflects the most restrictive license among the posters whose content it carries.
+Each record keeps its own license in `rightsList`, and that per-poster license is what governs reuse of that poster. The corpus level license reflects the most restrictive license among the posters whose content it carries.
 
-Every poster appears in exactly one corpus, so nothing is duplicated across them. A poster sits in the corpus for its own license and carries its extracted content where we hold it, or its metadata alone where we do not. Excluded licenses have no corpus of their own, so those metadata-only records travel with the CC0 corpus.
+Every poster appears in exactly one corpus, so nothing is duplicated across them. A poster sits in the corpus for its own license and carries its poster extracted metadata where we hold it, or its repository metadata alone where we do not. Excluded licenses have no corpus of their own, so those repository-metadata-only records travel with the CC0 corpus.
 
-Metadata for every poster is openly licensed regardless of the poster's own terms, because repository deposit metadata from Zenodo and Figshare is itself CC0. That is why excluded posters can still be listed, searched, and cited, just without their extracted content or thumbnail.
+Metadata for every poster is openly licensed regardless of the poster's own terms, because repository deposit metadata from Zenodo and Figshare is itself CC0. That is why excluded posters can still be listed, searched, and cited, just without their poster extracted metadata or thumbnail.
 
 ::: info
 The full license policy with implementation details is maintained in the [extraction pipeline repository](https://github.com/fairdataihub/poster-repo-to-json/blob/main/docs/LICENSE_POLICY.md).
