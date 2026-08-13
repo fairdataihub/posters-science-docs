@@ -45,7 +45,7 @@ If your use case only needs bibliographic data such as counting posters, mapping
 
 A corpus license is an offer to whoever downloads it, so each corpus carries a license that everything inside it can legitimately be shared under. That is why the split exists: ShareAlike posters cannot be redistributed under plain CC-BY, and NonCommercial posters cannot be redistributed under a license that permits commercial use.
 
-The reasoning behind the split is described in [How posters are redistributed](/docs/docs/auto-registration#how-posters-are-redistributed).
+The reasoning behind the split is described in [How posters are redistributed](/docs/auto-registration#how-posters-are-redistributed).
 
 Each record also keeps its own license in `rightsList`. **That per-poster license is what governs your reuse of that particular poster.** The corpus license reflects the most restrictive license among the posters whose content it carries.
 

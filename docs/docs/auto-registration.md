@@ -84,11 +84,11 @@ Licenses not listed in either category are added to a waiting list for manual re
 - **Open licenses we have not catalogued yet** (for example ODC-PDDL, ODC-BY, AFL-3.0, Etalab-2.0, RPL-1.5, OCCT-PL). These are reviewed and added to the appropriate category.
 - **Values that are not licenses at all.** A small number of deposits carry a grant code, a project title, or a contact message in the rights field. These are treated as "no license specified" and reported to the source repository as a metadata error.
 
-Posters on the waiting list stay in the registry and remain searchable, but they are held back from the bulk corpora until their terms are resolved. See [Licenses held back from every corpus](/docs/docs/bulk-corpus#licenses-held-back-from-every-corpus).
+Posters on the waiting list stay in the registry and remain searchable, but they are held back from the bulk corpora until their terms are resolved. See [Licenses held back from every corpus](/docs/bulk-corpus#licenses-held-back-from-every-corpus).
 
 ## How posters are redistributed
 
-The full poster archive is published on Zenodo as **five license-separated deposits**. Each poster appears in exactly one, chosen by its own license. For the concrete composition of each deposit, its record counts, and the download format, see [Bulk Corpus](/docs/docs/bulk-corpus).
+The full poster archive is published on Zenodo as **five license-separated deposits**. Each poster appears in exactly one, chosen by its own license. For the concrete composition of each deposit, its record counts, and the download format, see [Bulk Corpus](/docs/bulk-corpus).
 
 A deposit's license is an offer to whoever downloads it, so each corpus carries a license that everything inside it can legitimately be shared under. The deciding question for each poster is whether its license allows an adaptation to be released under different terms:
 
@@ -111,7 +111,7 @@ Every poster appears in at most one archive, so nothing is duplicated across the
 
 Excluded licenses have no archive of their own. Where the license is one we can evaluate — No-Derivatives, a rights statement, a copyleft software license, or no license at all — it tells us to withhold the content, and the metadata-only record travels with the CC0 archive. Where the rights field holds something we cannot evaluate, such as an uncatalogued license or free text, the poster is held back from every archive until it has been reviewed.
 
-Metadata for every poster is openly licensed regardless of the poster's own terms, because repository deposit metadata from Zenodo and Figshare is itself CC0. That is why excluded posters can still be listed, searched, and cited, just without their extracted content or thumbnail.
+Metadata for every poster is openly licensed regardless of the poster's own terms, because repository deposit metadata from Zenodo and Figshare is itself CC0. That is why excluded posters can still be listed, searched, and cited, just without their extracted content or thumbnail. 
 
 ::: info
 The full license policy with implementation details is maintained in the [extraction pipeline repository](https://github.com/fairdataihub/poster-repo-to-json/blob/main/docs/LICENSE_POLICY.md).
