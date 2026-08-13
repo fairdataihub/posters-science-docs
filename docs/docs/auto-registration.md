@@ -52,15 +52,17 @@ Posters published under the following licenses permit derivative works. For thes
 
 | Category | Licenses |
 |----------|----------|
-| Public domain | CC0-1.0, CC-PDDC, other-pd, ODC-PDDL |
+| Public domain | CC0-1.0, CC-PDDC, other-pd |
 | CC Attribution | CC-BY-4.0, CC-BY-3.0 (incl. ported, e.g. 3.0-US), CC-BY-2.5, CC-BY-2.0, CC-BY-1.0 |
 | CC Attribution-ShareAlike | CC-BY-SA-4.0, CC-BY-SA-3.0, CC-BY-SA-2.5, CC-BY-SA-2.0 |
 | CC Attribution-NonCommercial | CC-BY-NC-4.0, CC-BY-NC-3.0, CC-BY-NC-2.5, CC-BY-NC-2.0 |
 | CC Attribution-NonCommercial-ShareAlike | CC-BY-NC-SA-4.0, CC-BY-NC-SA-3.0, CC-BY-NC-SA-2.5, CC-BY-NC-SA-2.0 |
-| Software (permissive) | MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause, ISC, Unlicense, MPL-2.0 |
+| Software (permissive) | MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause, ISC, Unlicense |
 | Software (copyleft) | GPL-3.0, GPL-2.0, LGPL-3.0, LGPL-2.1, AGPL |
 
 Copyleft licenses (the GPL family) permit extraction, but they require any derivative to be distributed under the same license. Because we do not publish a GPL-licensed archive, those posters are included as metadata only in our published archives. See [How posters are redistributed](#how-posters-are-redistributed) below.
+
+`other-pd` is Zenodo's public domain designation. It permits extraction, but because it is not itself a Creative Commons dedication those posters are published in the CC-BY archive rather than the CC0 one.
 
 ### Excluded licenses
 
@@ -79,12 +81,14 @@ Posters under the following licenses do not grant permission to create or redist
 
 Licenses not listed in either category are added to a waiting list for manual review before any extraction is performed. Two things commonly land there:
 
-- **Open licenses we have not catalogued yet** (for example ODC-PDDL, AFL-3.0, Etalab-2.0, ODC-BY). These are reviewed and added to the appropriate category.
+- **Open licenses we have not catalogued yet** (for example ODC-PDDL, ODC-BY, AFL-3.0, Etalab-2.0, RPL-1.5, OCCT-PL). These are reviewed and added to the appropriate category.
 - **Values that are not licenses at all.** A small number of deposits carry a grant code, a project title, or a contact message in the rights field. These are treated as "no license specified" and reported to the source repository as a metadata error.
+
+Posters on the waiting list stay in the registry and remain searchable, but they are held back from the bulk corpora until their terms are resolved. See [Licenses held back from every corpus](/docs/docs/bulk-corpus#licenses-held-back-from-every-corpus).
 
 ## How posters are redistributed
 
-The full poster archive is published on Zenodo as **five license-separated corpora**. Each poster appears in exactly one, chosen by its own license.
+The full poster archive is published on Zenodo as **five license-separated deposits**. Each poster appears in exactly one, chosen by its own license. For the concrete composition of each deposit, its record counts, and the download format, see [Bulk Corpus](/docs/docs/bulk-corpus).
 
 A deposit's license is an offer to whoever downloads it, so each corpus carries a license that everything inside it can legitimately be shared under. The deciding question for each poster is whether its license allows an adaptation to be released under different terms:
 
@@ -103,7 +107,9 @@ ShareAlike and NonCommercial restrict different things: ShareAlike governs how y
 
 Each record keeps its own license in `rightsList`, and that per-poster license is what governs reuse of that poster. The archive-level license reflects the most restrictive license among the posters whose content it carries.
 
-Every poster appears in exactly one corpus, so nothing is duplicated across them. A poster sits in the corpus for its own license and carries its extracted content where we hold it, or its metadata alone where we do not. Excluded licenses have no corpus of their own, so those metadata-only records travel with the CC0 corpus.
+Every poster appears in at most one archive, so nothing is duplicated across them. A poster sits in the archive for its own license and carries its extracted content where we hold it, or its metadata alone where we do not.
+
+Excluded licenses have no archive of their own. Where the license is one we can evaluate — No-Derivatives, a rights statement, a copyleft software license, or no license at all — it tells us to withhold the content, and the metadata-only record travels with the CC0 archive. Where the rights field holds something we cannot evaluate, such as an uncatalogued license or free text, the poster is held back from every archive until it has been reviewed.
 
 Metadata for every poster is openly licensed regardless of the poster's own terms, because repository deposit metadata from Zenodo and Figshare is itself CC0. That is why excluded posters can still be listed, searched, and cited, just without their extracted content or thumbnail.
 

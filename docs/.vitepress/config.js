@@ -103,6 +103,7 @@ function sidebarGuide() {
       collapsible: true,
       items: [
         { text: "Searching the Registry", link: "/docs/search" },
+        { text: "Bulk Corpus", link: "/docs/bulk-corpus" },
       ],
     },
     {
