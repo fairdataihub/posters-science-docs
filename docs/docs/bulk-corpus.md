@@ -54,6 +54,22 @@ For the fields and their meanings, see [The Poster Schema](/docs/schema). For ho
 license is evaluated and which corpus it maps to, see
 [Auto-Registration](/docs/auto-registration#how-posters-are-redistributed).
 
+## What you download
+
+Each corpus is a single zip archive on Zenodo:
+
+```text
+records.ndjson
+README.md
+LICENSE
+```
+
+`records.ndjson` holds the whole corpus as
+[NDJSON](https://github.com/ndjson/ndjson-spec), one JSON object per line and one line per
+poster, so it can be read a record at a time without loading the file into memory.
+`LICENSE` is the license the corpus is released under, and `README.md` describes the
+release and its contents.
+
 ## Citing a corpus
 
 Each corpus has its own DOI, so you can cite the exact release you used. If you use
