@@ -50,6 +50,11 @@ work, so it is included only where the poster's license permits redistributing d
 Where it does not, the record ships with repository metadata only. Each record states which
 kind it is.
 
+Each line is a wrapper around one poster record. `posterJson` holds the record itself and
+follows the [Poster JSON Schema](https://github.com/fairdataihub/poster-json-schema); the
+surrounding fields `id`, `posterUrl`, `imageUrl`, `publishedAt`, `license` and `metadataOnly`
+are added by this export and are not part of the schema.
+
 For the fields and their meanings, see [The Poster Schema](/docs/schema). For how each
 license is evaluated and which corpus it maps to, see
 [Auto-Registration](/docs/auto-registration#how-posters-are-redistributed).
