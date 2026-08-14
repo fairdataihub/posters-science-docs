@@ -93,7 +93,7 @@ A deposit's license is an offer to whoever downloads it, so each corpus carries 
 
 | Corpus | Released under | Contains | DOI |
 |--------|----------------|----------|-----|
-| 1. CC0 | CC0-1.0 | Public domain posters, plus the repository-metadata-only records for excluded licenses | [10.5281/zenodo.21924695](https://doi.org/10.5281/zenodo.21924695) |
+| 1. CC0 | CC0-1.0 | Public domain posters, plus the repository-metadata-only records for excluded licenses | [10.5281/zenodo.21938474](https://doi.org/10.5281/zenodo.21938474) |
 | 2. CC-BY-4.0 | CC-BY-4.0 | CC Attribution posters (all versions) and permissive software licenses | [10.5281/zenodo.21924848](https://doi.org/10.5281/zenodo.21924848) |
 | 3. CC-BY-SA 4.0 | CC-BY-SA-4.0 | ShareAlike posters | [10.5281/zenodo.21925147](https://doi.org/10.5281/zenodo.21925147) |
 | 4. CC-BY-NC 4.0 | CC-BY-NC-4.0 | NonCommercial posters | [10.5281/zenodo.21925170](https://doi.org/10.5281/zenodo.21925170) |
