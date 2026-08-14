@@ -24,7 +24,7 @@ appears in at most one corpus, so nothing is duplicated across them.
 
 | Corpus | Released under | Posters | Version | Released | DOI |
 |--------|----------------|---------|---------|----------|-----|
-| 1. CC0 | CC0-1.0 | 1,599 | 2026-08-13 | 2026-08-13 | [10.5281/zenodo.21924695](https://doi.org/10.5281/zenodo.21924695) |
+| 1. CC0 | CC0-1.0 | 1,599 | 2026-08-13 | 2026-08-13 | [10.5281/zenodo.21938474](https://doi.org/10.5281/zenodo.21938474) |
 | 2. CC-BY-4.0 | CC-BY-4.0 | 28,727 | 2026-08-13 | 2026-08-13 | [10.5281/zenodo.21924848](https://doi.org/10.5281/zenodo.21924848) |
 | 3. CC-BY-SA 4.0 | CC-BY-SA-4.0 | 313 | 2026-08-13 | 2026-08-13 | [10.5281/zenodo.21925147](https://doi.org/10.5281/zenodo.21925147) |
 | 4. CC-BY-NC 4.0 | CC-BY-NC-4.0 | 364 | 2026-08-13 | 2026-08-13 | [10.5281/zenodo.21925170](https://doi.org/10.5281/zenodo.21925170) |
