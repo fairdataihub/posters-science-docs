@@ -112,6 +112,7 @@ function sidebarGuide() {
       items: [
         { text: "The Poster Schema", link: "/docs/schema" },
         { text: "Zenodo Deposit Details", link: "/docs/zenodo-mapping" },
+        { text: "Figshare Deposit Details (draft)", link: "/docs/figshare-mapping" },
         { text: "Metadata Extraction", link: "/docs/extraction" },
         { text: "Auto-Registration", link: "/docs/auto-registration" },
         { text: "Metrics", link: "/docs/metrics" },
