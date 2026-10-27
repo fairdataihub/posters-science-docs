@@ -84,14 +84,14 @@ These fields are managed by the platform. They do not appear in the metadata edi
 |-------|------------------------|
 | DOI | Assigned when the poster is published to Zenodo |
 | Publisher | Set to "Zenodo" when archiving to Zenodo |
-| Publication year | Derived from the publication date |
-| Dates | "Issued" date recorded when the poster is published to a repository |
+| Publication year | The year the poster is published to Zenodo |
+| Dates | A "Submitted" date recorded when the poster is shared to Zenodo |
 | Resource type | Set to "Poster" |
 | Format | Set based on the uploaded file type (PDF, PNG, etc.) |
 | Version | Defaults to "1" for new deposits |
 | License | Selected during the publishing step (not in the metadata editor) |
 | Identifier type | Auto-classified as DOI or URL based on the identifier string |
-| Description type | Set to "Abstract" by default |
+| Description type | "Other" for the description, "Abstract" for the submission abstract |
 | Scheme metadata (ORCID scheme, ROR scheme, etc.) | Auto-populated when identifiers are present |
 
 ## Date types
