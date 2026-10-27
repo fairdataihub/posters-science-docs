@@ -74,4 +74,4 @@ figshare.com offers a short list of licenses: CC BY 4.0, CC0, MIT, GPL, GPL 2.0+
 
 ## Full field-by-field crosswalk
 
-For the detailed technical mapping, including open questions, see the [draft Figshare crosswalk in the poster-json-schema repository](https://github.com/fairdataihub/poster-json-schema/blob/main/crosswalk/figshare.md).
+For the detailed technical mapping, including open questions, see the draft Figshare crosswalk, under review in [poster-json-schema pull request #17](https://github.com/fairdataihub/poster-json-schema/pull/17).
