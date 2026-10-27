@@ -35,8 +35,8 @@ A new version of your poster is published as a new version of the same Figshare 
 | Authors | Given and family names and ORCID iDs |
 | Keywords | Sent as Figshare keywords. Figshare needs at least one. |
 | Description and submission abstract | Combined into the item description, with the abstract under its own heading |
-| Conference name, location, and dates | Written as a first line of the description: "Presented at ..." |
-| License | Matched to a license your Figshare account offers |
+| Conference name, location, dates, and website | Added to the description under a "Conference" heading, so Figshare search finds your poster by conference |
+| License | Chosen when you publish, from the licenses your Figshare account offers |
 | Related identifiers | DOIs or links of related papers, datasets, or software, with their relationship type |
 | Funding | Linked to a grant in Figshare's funding database when the award number matches exactly one grant, otherwise added as text ("Funder name, award number: award title") |
 
@@ -63,14 +63,14 @@ These fields have no place in Figshare's metadata. They are kept in the `poster.
 | Affiliations | figshare.com has no affiliation field for authors. On an institutional portal, Figshare adds your institution. |
 | Author type (person or organization) | Figshare treats every author as a person |
 | Language | No language field |
-| Presentation date and conference details | No conference fields; included in the description line instead |
+| Presentation date and conference details | No conference fields; included in the description instead |
 | Funder identifiers (ROR) and award links | No field for them |
 | Version label | Figshare numbers versions itself, so a version you type (e.g., "2.1") cannot be sent |
 | Poster content sections, image captions, table captions | No equivalent fields |
 
 ## Licenses
 
-figshare.com offers a short list of licenses: CC BY 4.0, CC0, MIT, GPL, GPL 2.0+, GPL 3.0+ and Apache 2.0. Institutional portals may offer more. How Posters.science will handle a poster under another license, such as CC BY-NC or CC BY-SA, has not been decided yet.
+figshare.com offers a short list of licenses: CC BY 4.0, CC0, MIT, GPL, GPL 2.0+, GPL 3.0+ and Apache 2.0. For a poster, that means CC BY 4.0 or CC0. Institutional portals may offer more. When you publish to Figshare, the license list shows only the licenses your Figshare account offers.
 
 ## Full field-by-field crosswalk
 
