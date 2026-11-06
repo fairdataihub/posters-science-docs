@@ -47,19 +47,21 @@ These lookups help improve the accuracy of the values presented during [metadata
 
 Every field is extracted as well as we can, and the review step shows you what was extracted so you can check it before publishing.
 
-The table shows how closely poster2json 0.10.5 matches the text printed on 21 hand-labeled posters (20 PDF, 1 image), scored with ROUGE-L, where 1.00 means identical. Posters is the number of labeled posters that have the field.
+The table shows how closely poster2json 0.10.5 matches the text printed on a set of hand-labeled posters.
 
-| Field | Posters | Mean ROUGE-L |
-| ----- | ------- | ------------ |
-| Title | 21 | 0.978 |
-| Author names | 21 | 0.898 |
-| Given/family split | 12 | 1.000 |
-| Affiliations | 21 | 0.953 |
-| Author-affiliation assignment | 21 | 0.884 |
-| Section text | 21 | 0.839 |
-| Figure captions | 13 | 0.975 |
-| Table captions | 5 | 1.000 |
-| All content (forgiving) | 21 | 0.862 |
-| Content, boundary-free F1 | 21 | 0.917 |
+The score is called ROUGE-L. To get it, we take the words we extracted and the words actually printed on the poster, and find the longest run of words that appear in both, in the same order. Words can be skipped in between, but the order has to hold. The score says how much of both texts that shared run covers. A score of 1.00 means the two are word for word the same, 0.90 means about nine words in ten line up, and 0 means nothing matches.
+
+| Field | ROUGE-L |
+| ----- | ---------- |
+| Title | 0.978 |
+| Author names | 0.898 |
+| Given/family split | 1.000 |
+| Affiliations | 0.953 |
+| Author-affiliation assignment | 0.884 |
+| Section text | 0.839 |
+| Figure captions | 0.975 |
+| Table captions | 1.000 |
+| All content (forgiving) | 0.862 |
+| Content, boundary-free F1 | 0.917 |
 
 Summaries, keywords and the research field are written or chosen by the model rather than copied from the poster, so they have no score. How each field is compared is described in the [poster2json evaluation documentation](https://github.com/fairdataihub/poster2json/blob/main/docs/evaluation.md).
