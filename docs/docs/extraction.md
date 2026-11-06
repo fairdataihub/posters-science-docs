@@ -45,10 +45,21 @@ These lookups help improve the accuracy of the values presented during [metadata
 
 ## Accuracy
 
-The extraction tool is validated against a set of manually annotated posters covering different research domains, layouts, and languages. The validation measures:
+Every field is extracted as well as we can, and the review step shows you what was extracted so you can check it before publishing.
 
-- **Word capture**: What percentage of the text on the poster was successfully read.
-- **Field accuracy**: How well the extracted fields match the ground truth annotations.
-- **Number capture**: Whether numerical values (grant numbers, dates, statistics) were correctly extracted.
+The table shows how closely poster2json 0.10.5 matches the text printed on 21 hand-labeled posters (20 PDF, 1 image), scored with ROUGE-L, where 1.00 means identical. Posters is the number of labeled posters that have the field.
 
-Current validation results show a pass rate of 95% (19 of 20 posters) across the test set. Details and per-poster results are available in the [poster2json evaluation documentation](https://github.com/fairdataihub/poster2json/blob/main/docs/evaluation.md).
+| Field | Posters | Mean ROUGE-L |
+| ----- | ------- | ------------ |
+| Title | 21 | 0.978 |
+| Author names | 21 | 0.898 |
+| Given/family split | 12 | 1.000 |
+| Affiliations | 21 | 0.953 |
+| Author-affiliation assignment | 21 | 0.884 |
+| Section text | 21 | 0.839 |
+| Figure captions | 13 | 0.975 |
+| Table captions | 5 | 1.000 |
+| All content (forgiving) | 21 | 0.862 |
+| Content, boundary-free F1 | 21 | 0.917 |
+
+Summaries, keywords and the research field are written or chosen by the model rather than copied from the poster, so they have no score. How each field is compared is described in the [poster2json evaluation documentation](https://github.com/fairdataihub/poster2json/blob/main/docs/evaluation.md).
