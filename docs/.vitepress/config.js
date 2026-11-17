@@ -94,6 +94,7 @@ function sidebarGuide() {
         { text: "Overview", link: "/docs/sharing" },
         { text: "Creating an Account", link: "/docs/account" },
         { text: "Uploading Your Poster", link: "/docs/upload" },
+        { text: "Conference Poster Sheets", link: "/docs/conference-sheets" },
         { text: "Reviewing Metadata", link: "/docs/metadata" },
         { text: "Publishing to a Repository", link: "/docs/publish" },
       ],
