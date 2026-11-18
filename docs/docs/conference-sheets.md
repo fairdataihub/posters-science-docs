@@ -51,7 +51,9 @@ Use the submissions download from EasyChair, as an Excel workbook or as CSV file
 
 **Excel:** the basic submissions download (one sheet), or the Conference data download (a workbook with Submissions and Authors sheets).
 
-**CSV:** drop the files together: `submission.csv`, plus `author.csv`, `submission_topic.csv` and `topics.csv` when you have them. Only `submission.csv` is required.
+**CSV:** drop up to four files together: `submission.csv`, plus `author.csv`, `submission_topic.csv` and `topics.csv` when you have them. Only `submission.csv` is required.
+
+Only the Authors sheet or `author.csv` has affiliations, so use the Conference data download or include `author.csv` when you can.
 
 ### Required columns
 
@@ -97,7 +99,7 @@ Email addresses and countries from the Authors sheet are not stored either.
 
 ## Curious
 
-Use the poster information sheet from Curious, as an `.xlsx` or `.csv` file.
+Use the poster information sheet from Curious, as an Excel file (`.xlsx`). CSV files are not accepted for Curious.
 
 ### Required columns
 
@@ -121,6 +123,8 @@ Curious sheets usually don't name the poster files, so most rows are matched by 
 
 ## Limits
 
-- File types: `.xlsx`, `.xls`, `.csv` or `.tsv`.
+- File types:
+  - EasyChair: an Excel workbook (`.xlsx` or `.xls`), or up to four CSV files.
+  - Curious: an Excel file (`.xlsx` or `.xls`).
 - Up to 10 MB in total, and up to 20,000 rows.
 - An `.xls` file saved from a web page is not a real Excel file. Open it in Excel and save it as `.xlsx` or `.csv`.
